@@ -1,48 +1,45 @@
 ---
 import "../styles/global.css";
 import "../styles/css-reset-2024.css";
+import Footer from "../components/Footer.astro";
 
 interface Props {
   title: string;
+  descrition: string;
 }
 
-const { title } = Astro.props;
+const { title, descrition } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content={descrition} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
+
+  <!-- No se como se maneja, Esta cosa? -->
+  <!--? <div class="absolute box-border top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" > </div> -->
+
   <body>
-    <div
-      class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
-    >
-    </div>
-    <main class="mx-auto container md:pt-10">
+    <main class="mx-auto md:pt-10 container">
       <slot />
     </main>
+    <Footer />
   </body>
+
+  <style is:global>
+    :root {
+      color-scheme: dark light;
+    }
+
+    html {
+      font-family: system-ui, sans-serif;
+      background: #13151a;
+    }
+  </style>
 </html>
-
-<style is:global>
-  /* :root {
-    color-scheme: light;
-    Todavia no se como usar esto
-    corretamente
-  } */
-
-  :root {
-    color-scheme: dark light;
-  }
-
-  html {
-    font-family: system-ui, sans-serif;
-    background: #13151a;
-  }
-</style>

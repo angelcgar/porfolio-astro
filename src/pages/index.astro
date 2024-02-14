@@ -1,11 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+// Components
+import Hero from "../components/Hero.astro";
+import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
+import Skills from "../components/Skills.astro";
 import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <h1>Hola mundo</h1>
+<Layout
+  title="Portafolio de angelcgar ~ Desarrollador y Programador Web."
+  descrition="Portafolio de angelcgar."
+>
+  <main
+    class="max-w-5xl m-auto mt-16 pb-20 px-1 md:px-4 lg:w-[800px] p-1 md:p-4 leading-normal"
+  >
+    <Hero />
+    <Experience />
+    <Projects />
+    <Skills />
   </main>
 </Layout>
 

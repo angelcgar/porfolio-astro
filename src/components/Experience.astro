@@ -1,0 +1,32 @@
+---
+import ExperienceItem from "../components/ExperienceItem.astro";
+
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Estudiante autodidacta",
+    description:
+      "Estudio por diversas fuentes, me encanta curosiar las nuevas tecnologias. Estoy leyendo y dando el mejor esfuerzo posible para comprender a los proyectos de codigo abierto, por esa razon, yo puedo tener una vista diferente al proyecto en turno.",
+    // link: "https://github.com/angelcgar",
+  },
+  {
+    date: "Septiembre 2022",
+    title: "Despliege de paginas Web por diferentes Hostings",
+    description:
+      "Fui el programador que desplego mas de 10 paginas Web con tan solo semanas de experiencias en el mundo del desarrollo web, lo cual demuestra mis capacidades de leer, entender, analizar y tomar decisiones mas favoranbles.",
+  },
+];
+---
+
+<section class="bg-zinc-900 p-20 rounded-xl my-4 container">
+  <h2 class="text-5xl font-bold my-5">Experiencia laboral</h2>
+  <ol class="relative border-s border-gray-200 ml-3">
+    {
+      EXPERIENCIE.map((experiencie) => (
+        <li class="m-10 ms-4 p-9">
+          <ExperienceItem {...experiencie} />
+        </li>
+      ))
+    }
+  </ol>
+</section>
