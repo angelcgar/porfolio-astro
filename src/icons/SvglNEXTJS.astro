@@ -1,10 +1,11 @@
+---
+const { clas: classname } = Astro.props;
+---
 <svg
   viewBox="0 0 256 256"
-  class="size-6"
+  class={classname}
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="256"
-  height="256"
   preserveAspectRatio="xMidYMid"
   ><defs
     ><linearGradient id="c" x1="55.633%" x2="83.228%" y1="56.385%" y2="96.08%"
