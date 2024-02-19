@@ -4,7 +4,7 @@
     "title": "Mi Calculadora",
     "body": "Este es mi calculadora mas importante de todos mis proyectos",
     "href": "https://amazing-queijadas-ba02d4.netlify.app/",
-    "imageHref": "/img/img.webp",
+    "imageHref": "/img/calculadora.webp",
     "github": "https://github.com/angelcgar/calculadora-react",
     "tags": [
       "next",
@@ -26,12 +26,12 @@
     ]
   },
   {
-    "name": "Tienda",
-    "title": "Mi Tienda sobre computadoras",
+    "name": "Documentacion",
+    "title": "Mi Documentacion multiplataforma",
     "body": "Aplicacion Full stack, que se sirve muy rapido y consume una API que yo mismo he programado",
-    "href": "https://joyful-cannoli-81bf1e.netlify.app/",
-    "imageHref": "/img/tienda.webp",
-    "github": "https://github.com/angelcgar/slimbuuk",
+    "href": "https://first-documentation-f04itxr5m-angelcgars-projects.vercel.app/",
+    "imageHref": "/img/documentacion.webp",
+    "github": "https://github.com/angelcgar/first-documentation",
     "tags": [
       "next",
       "react",
