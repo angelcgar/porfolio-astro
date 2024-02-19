@@ -1,47 +1,51 @@
-<section class="p-20 rounded-xl my-4 container md:p-10 bg-red-950 py-20 gap-y-8"
+---
+import CardSkills from './CardSkills.astro'
+---
+
+<section class="p-20 rounded-xl my-4 container md:p-10 bg-transparent py-20 gap-y-8"
 >
   <h2 class="text-5xl font-bold my-5">Skills</h2>
 
-  <div class="grid grid-cols-4">
-    <div class="text-center">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+    <CardSkills>
       <img src="/svg/html.svg" class="w-20 m-auto" alt="" />
       <p class="mt-4">HTML</p>
-    </div>
+    </CardSkills>
 
-    <div class="text-center">
+    <CardSkills>
       <img src="/svg/css.svg" class="w-20 m-auto" alt="" />
       <p class="mt-4">CSS</p>
-    </div>
+    </CardSkills>
 
-    <div class="text-center">
+    <CardSkills>
       <img src="/svg/javascript.svg" class="w-20 m-auto" alt="" />
       <p class="mt-4">jAVASCRIPT</p>
-    </div>
+    </CardSkills>
 
-    <div class="text-center">
+    <CardSkills>
       <img src="/svg/react.svg" class="w-20 m-auto" alt="" />
       <p class="mt-4">REACT</p>
-    </div>
+    </CardSkills>
 
-    <div class="text-center">
+    <CardSkills>
       <img src="/svg/nodejs.svg" class="w-20 m-auto" alt="" />
       <p class="mt-4">NODE.jS</p>
-    </div>
+    </CardSkills>
 
-    <div class="text-center">
+    <CardSkills>
       <img src="/svg/vitejs.svg" class="w-20 m-auto" alt="" />
       <p class="mt-4">VITE.jS</p>
-    </div>
+    </CardSkills>
 
-    <div class="text-center">
+    <CardSkills>
       <img src="/svg/tailwind.svg" class="w-20 m-auto" alt="" />
       <p class="mt-4">TAILWIND</p>
-    </div>
+    </CardSkills>
 
-    <div class="text-center">
+    <CardSkills>
       <img src="/svg/nextjs.svg" class="w-20 m-auto" alt="" />
       <p class="mt-4">NEXT.jS</p>
-    </div>
+    </CardSkills>
     
   </div>
 

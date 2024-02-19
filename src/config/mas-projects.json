@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Juego de Snake",
+    "title": "Mi Juego de Snake",
+    "body": "En este proyecto, yo realice un juego con javascript puro, ademas de que es muy entretenido",
+    "href": "https://65946ac2adc6ff0a49bef6c8--cheerful-tulumba-6526bc.netlify.app/",
+    "imageHref": "/img/snake.webp",
+    "github": "https://github.com/angelcgar/snake",
+    "tags": [
+      "next",
+      "react",
+      "css"
+    ]
+  },
+  {
+    "name": "Tienda",
+    "title": "Mi Tienda sobre computadoras",
+    "body": "Aplicacion Full stack, que se sirve muy rapido y consume una API que yo mismo he programado",
+    "href": "https://joyful-cannoli-81bf1e.netlify.app/",
+    "imageHref": "/img/tienda.webp",
+    "github": "https://github.com/angelcgar/slimbuuk",
+    "tags": [
+      "next",
+      "react",
+      "html"
+    ]
+  },
+  {
+    "name": "Lista de Tareas",
+    "title": "Mi Lista de Tareas",
+    "body": "Este es mi Lista de Tareas que fuefeito con React",
+    "href": "https://poetic-quokka-826849.netlify.app/",
+    "imageHref": "/img/listaTareas.webp",
+    "github": "https://github.com/angelcgar/aplicacion-react-tareas",
+    "tags": [
+      "next",
+      "react",
+      "bun"
+    ]
+  },
+  {
+    "name": "calculadora",
+    "title": "Mi Calculadora",
+    "body": "Este es mi calculadora mas importante de todos mis proyectos",
+    "href": "https://amazing-queijadas-ba02d4.netlify.app/",
+    "imageHref": "/img/img.webp",
+    "github": "https://github.com/angelcgar/calculadora-react",
+    "tags": [
+      "next",
+      "react",
+      "html"
+    ]
+  },
+  {
+    "name": "Portafolio",
+    "title": "Mi Portafolio",
+    "body": "Este es mi portafolio que fue hecho con Astro",
+    "href": "https://angelcgar.github.io/porfolio-astro/",
+    "imageHref": "/img/astro.webp",
+    "github": "https://github.com/angelcgar/porfolio-astro",
+    "tags": [
+      "astro",
+      "tailwind",
+      "typescript"
+    ]
+  }
+]

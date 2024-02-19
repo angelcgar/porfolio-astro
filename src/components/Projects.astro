@@ -1,8 +1,10 @@
 ---
-import projects from "../config/projects.json";
-// import features from "../config/features.json";
+// config projects.json 
+import projects from '../config/projects.json'
 
-// console.log(features);
+// Componente 
+import CardProjects from '../components/CardProjects.astro'
+
 ---
 
 <h1 class="text-center font-bold text-5xl mt-10">Proyectos</h1>
@@ -10,23 +12,13 @@ import projects from "../config/projects.json";
 <div class="grid md:grid-cols-2 gap-4 p-4">
   {
     projects.map((project) => (
-      <div class="bg-slate-800 p-10 rounded-xl">
-        <img
-          src={project.imageHref}
-          class="w-72 h-auto m-auto rounded-md"
-          alt={`Imagen de mi proyecto ${project.name}`}
-        />
-        <h2 class="text-2xl font-bold my-4">{project.title}</h2>
-        <p>{project.body}</p>
-        <>
-          <button class=" bg-sky-700 hover:bg-sky-600 p-1  mt-2 justify-evenly rounded-sm">
-            Ver Reposotorio
-          </button>
-          <button class=" bg-sky-700 hover:bg-sky-600 p-1  mt-2 justify-evenly rounded-sm">
-            Proyecto en vivo
-          </button>
-        </>
-      </div>
+      <CardProjects project={project} />
     ))
   }
+
+  <div>
+    <button class="bg-indigo-700 px-3 py-2 hover:bg-indigo-600"
+      ><a href="/mas-proyectos">Mas proyectos</a>
+    </button>
+  </div>
 </div>

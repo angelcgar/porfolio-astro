@@ -1,27 +1,33 @@
-<footer class="bg-zinc-950 flex py-10 gap-4 mt-4">
+---
+import EmailIcon from '../icons/EmailIcon.astro'
+import LinkendinIcon from '../icons/LinkendinIcon.astro'
+import TwitterIcon from '../icons/TwitterIcon.astro'
+
+const STALES = 'size-9 hover:text-ancg-400'
+---
+
+<footer class="bg-zinc-950 flex py-10 gap-4 mt-4 ">
   <div
     class="container mx-auto flex justify-evenly px-6 flex-col md:flex-row text-center md:text-left gap-4"
   >
     <div>
-      <h4 class="font-bold text-xl">Site Map</h4>
-      <a href="/">Home</a>
-      <a href="/about">about</a>
-      <a href="/pricing">pricing</a>
+    <p>&copy; 2022. Desarrollado por <a href="https://twitter.com/AngelCo99356422" class={STALES}>@angelcgar</a></p>
     </div>
 
     <div>
-      <h4 class="font-bold">Site Map</h4>
-      <p>Lorem, ipsum.</p>
-      <p>Lorem, ipsum.</p>
-      <p>Lorem, ipsum.</p>
-      <p>Lorem, ipsum.</p>
+      <h4 class="font-bold text-xl m-1">Idiomas</h4>
+      <p>Español.</p>
+      <p>Ingles.</p>
     </div>
 
-    <div>
-      <h4>Socials</h4>
-      <a href="/">Facebook</a>
-      <a href="/about">Intagram</a>
-      <a href="/pricing">Twitter</a>
+    <div class="flex flex-col m-1">
+      <h4 class="font-bold text-xl">Redes sociales</h4>
+      <div class="flex flex-row md:flex-row gap-x-4 justify-center">
+
+        <a href="mailto:ac5802021@gmail.com"><EmailIcon class={STALES} /></a>
+        <a href="https://www.linkedin.com/in/angel-contreras-b45a66290/"><LinkendinIcon class={STALES}/></a>
+        <a href="https://twitter.com/AngelCo99356422"><TwitterIcon class={STALES} /></a>
+      </div>
     </div>
   </div>
 </footer>
