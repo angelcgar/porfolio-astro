@@ -9,7 +9,7 @@
     "tags": [
       "next",
       "react",
-      "html"
+      "typescript"
     ]
   },
   {
@@ -27,27 +27,27 @@
   },
   {
     "name": "Documentacion",
-    "title": "Mi Documentacion multiplataforma",
+    "title": "Documentacion",
     "body": "Aplicacion Full stack, que se sirve muy rapido y consume una API que yo mismo he programado",
     "href": "https://first-documentation-f04itxr5m-angelcgars-projects.vercel.app/",
     "imageHref": "/img/documentacion.webp",
     "github": "https://github.com/angelcgar/first-documentation",
     "tags": [
-      "next",
-      "react",
+      "astro",
+      "starlight",
       "html"
     ]
   },
   {
-    "name": "Juego de Snake",
-    "title": "Mi Juego de Snake",
+    "name": "Candy crush",
+    "title": "Candy crush",
     "body": "En este proyecto, yo realice un juego con javascript puro, ademas de que es muy entretenido",
-    "href": "https://65946ac2adc6ff0a49bef6c8--cheerful-tulumba-6526bc.netlify.app/",
-    "imageHref": "/img/snake.webp",
-    "github": "https://github.com/angelcgar/snake",
+    "href": "https://candy-crush-es.vercel.app/",
+    "imageHref": "/img/candy-crush.webp",
+    "github": "https://github.com/angelcgar/candy-crush-es",
     "tags": [
-      "next",
-      "react",
+      "vite",
+      "javascript",
       "css"
     ]
   }

@@ -1,37 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro'
-
-import EmailIcon from '../icons/EmailIcon.astro'
+import ContactoPages from '../components/pages/ContactoPages.astro'
 ---
 
-<Layout title="Seccion contacto" descrition="mi descripcion">
-  <div
-    class="max-w-5xl m-auto mt-16 pb-20 px-1 md:px-4 lg:w-[900px] p-1 md:p-4 leading-normal"
-  >
-    <header
-      class="bg-ancg-800 flex flex-col  md:text-left p-20 gap-3 rounded-xl"
-    >
-      <h1 class="text-5xl font-bold pb-3">Contactame</h1>
-      <p class="text-2xl">Quieres trabajar conmigo</p>
-      <p>Enviame un correo para que podamos trabajar en tu proyecto que tan bueno sea</p>
-      <p>Si tienes alguna duda o consulta no se preocupe puedes mandarme un correo a mi email</p>
-      <p>hla</p>
-
-      <div class="flex flex-row gap-y-1 mt-2">
-
-        <code class="bg-slate-800 p-2 rounded-md">ac584@example.com</code>
-        <EmailIcon class="size-9 hover:text-ancg-400" />
-      </div>
-    </header>
-  
-    <div class="bg-ancg-800 p-10 rounded-xl flex flex-row gap-2 mt-3">
-    </div>
-  </div>
-</Layout>
-
-<style>
-  p{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-</style>
+<ContactoPages />
