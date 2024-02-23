@@ -43,7 +43,7 @@
     "title": "Mi Calculadora",
     "body": "Este es mi calculadora mas importante de todos mis proyectos",
     "href": "https://amazing-queijadas-ba02d4.netlify.app/",
-    "imageHref": "/img/img.webp",
+    "imageHref": "/img/calculadora.webp",
     "github": "https://github.com/angelcgar/calculadora-react",
     "tags": [
       "next",
