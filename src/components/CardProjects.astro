@@ -8,6 +8,18 @@ const { project } = Astro.props
     class="w-72 lg:w-96 h-auto m-auto rounded-md "
     alt={`Imagen de mi proyecto ${project.name}`}
   />
+
+  <div class="grid grid-cols-2">
+    
+    <!--* para cada tag, haz una pastilla-->
+    {project.tags.map((tag: string) => (
+      <div class="flex flex-row flex-1 border-blue-800 border-solid border-2 rounded-2xl w-32 lg:w-40 mt-1 bg-purple-600/25 justify-center items-center">
+        <img src={`/svg/${tag}.svg`} class="w-6 h-auto pl-2" alt="">
+        <p class="ml-1">{tag}</p>
+      </div>
+    ))}
+  </div>
+  
   <h2 class="text-2xl font-bold my-4">{project.title}</h2>
   <p>{project.body}</p>
 
