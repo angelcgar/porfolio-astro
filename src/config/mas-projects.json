@@ -7,7 +7,7 @@
     "imageHref": "/img/snake.webp",
     "github": "https://github.com/angelcgar/snake",
     "tags": [
-      "next",
+      "nextjs",
       "react",
       "css"
     ]
@@ -20,7 +20,7 @@
     "imageHref": "/img/tienda.webp",
     "github": "https://github.com/angelcgar/slimbuuk",
     "tags": [
-      "next",
+      "nextjs",
       "react",
       "html"
     ]
@@ -33,7 +33,7 @@
     "imageHref": "/img/listaTareas.webp",
     "github": "https://github.com/angelcgar/aplicacion-react-tareas",
     "tags": [
-      "next",
+      "nextjs",
       "react",
       "bun"
     ]
@@ -46,7 +46,7 @@
     "imageHref": "/img/calculadora.webp",
     "github": "https://github.com/angelcgar/calculadora-react",
     "tags": [
-      "next",
+      "nextjs",
       "react",
       "html"
     ]
@@ -56,12 +56,7 @@
     "title": "Mi Portafolio",
     "body": "Este es mi portafolio que fue hecho con Astro",
     "href": "https://angelcgar.github.io/porfolio-astro/",
-    "imageHref": "/img/astro.webp",
-    "github": "https://github.com/angelcgar/porfolio-astro",
-    "tags": [
-      "astro",
-      "tailwind",
-      "typescript"
-    ]
+    "imageHref": "/img/calculadora.webp",
+    "github": "https://github.com/angelcgar/porfolio-astro"
   }
 ]

@@ -1,5 +1,11 @@
 ---
+import { unknown } from "astro/zod"
+
 const { project } = Astro.props
+
+const TAGS = project.tags
+
+// const Nsvg = TAGS === "starlight"
 ---
 
 <div class="bg-ancg-900 p-10 rounded-xl ">
@@ -8,16 +14,18 @@ const { project } = Astro.props
     class="w-72 lg:w-96 h-auto m-auto rounded-md "
     alt={`Imagen de mi proyecto ${project.name}`}
   />
-
   <div class="grid grid-cols-2">
     
     <!--* para cada tag, haz una pastilla-->
-    {project.tags.map((tag: string) => (
-      <div class="flex flex-row flex-1 border-blue-800 border-solid border-2 rounded-2xl w-32 lg:w-40 mt-1 bg-purple-600/25 justify-center items-center">
-        <img src={`/svg/${tag}.svg`} class="w-6 h-auto pl-2" alt="">
-        <p class="ml-1">{tag}</p>
-      </div>
-    ))}
+    {TAGS &&
+      TAGS.map((tag: string) => (
+        <div class="flex flex-row flex-1 border-blue-800 border-solid border-2 rounded-2xl w-32 lg:w-40 mt-1 bg-purple-600/25 justify-center items-center">
+          <!--solo para starlight que pesa mucho. pero es mejor que devuelva el mas liguero -->
+          <img src={tag === "starlight" ? `/img/${tag}.webp` : `/svg/${tag}.svg`} class="w-6 h-auto pl-2" alt="">
+          <p class="ml-1">{tag}</p>
+        </div>
+      ))
+    }
   </div>
   
   <h2 class="text-2xl font-bold my-4">{project.title}</h2>
@@ -25,10 +33,10 @@ const { project } = Astro.props
 
   <>
     <button class=" bg-sky-700 hover:bg-sky-600 p-1  mt-2 justify-evenly rounded-sm">
-      <a target="_blank" rel="nopper" href={project.github}>Ver Repositorio</a>
+      <a target="_blank" rel="noopener" href={project.github}>Ver Repositorio</a>
     </button>
     <button class=" bg-sky-700 hover:bg-sky-600 p-1  mt-2 justify-evenly rounded-sm">
-      <a target="_blank" rel="nopper" href={project.href}>Proyecto en vivo</a>
+      <a target="_blank" rel="noopener" href={project.href}>Proyecto en vivo</a>
     </button>
   </>
 </div>
