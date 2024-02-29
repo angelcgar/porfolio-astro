@@ -7,24 +7,24 @@ const HERO = {
 ---
 
 <header
-  class="bg-ancg-800 flex flex-col lg:flex-row text-pretty md:text-left p-10 md:p-20 gap-3 rounded-md mb-11 mx-1 container"
+  class="bg-ancg-950 flex flex-col lg:flex-row text-pretty md:text-left p-5 md:p-10 gap-3 rounded-md mb-11 mx-1 container"
 >
   <div>
     <h1 class="text-5xl font-bold pb-3 ">Hey, soy angelcgar</h1>
-    <p class="text-base md:text-2xl text-wrap max-w-[700px] pb-3">
+    <p class="text-base md:text-2xl max-w-[700px] pb-3">
       {
         (
           <>
-            Un <strong class="text-green-600">apasionado</strong> del mundo de la programación desde una edad temprana. Mi <strong class="text-yellow-300">amor por los desafíos lógicos</strong> y mi constante curiosidad me llevaron a explorar el vasto universo de la <strong class="text-purple-500">informática</strong>.
+            Un <strong class="text-green-600">apasionado</strong> del mundo de la programación desde una edad temprana. Mi <strong class="text-yellow-500">amor por los desafíos lógicos</strong> y mi constante curiosidad me llevaron a explorar el vasto universo de la <strong class="text-[#b368ff]">informática</strong>.
           </>
         )
       }  
     </p>
 
-    <button class="bg-indigo-700 px-3 py-2 hover:bg-indigo-600 hover:animate-pulsing"
+    <button class="bg-indigo-700 px-3 py-2 mt-4 hover:bg-indigo-600 hover:animate-pulsing"
       ><a href="/contacto">{HERO.contacto}</a>
     </button>
-    <button class="bg-indigo-700 px-3 py-2 hover:bg-indigo-600 hover:animate-pulsing">
+    <button class="bg-indigo-700 px-3 py-2 mt-4 hover:bg-indigo-600 hover:animate-pulsing">
       <a download="angelcg.pdf" href="/pdf/angelcg.pdf">{HERO.sobreMi}</a>
     </button>
 
@@ -33,11 +33,11 @@ const HERO = {
   <img
     alt="un dibujo de angelcgar, el dibujo fue echo con IA"
     src="/img/avatar2.webp"
-    class="w-44 h-48 rounded-xl mx-auto object-cover hidden lg:block"
+    class="w-40 h-56 rounded-xl mx-auto object-cover hidden lg:block aspect-auto "
   />
   <img
     alt="un dibujo de angelcgar, el dibujo fue echo con IA"
     src="/img/avatar1.webp"
-    class="w-58 h-48 rounded-xl mx-auto mt-3 object-cover lg:hidden"
+    class="w-58 h-48 rounded-xl mx-auto mt-3 object-cover lg:hidden aspect-auto"
   />
 </header>
