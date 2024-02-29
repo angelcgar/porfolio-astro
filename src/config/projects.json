@@ -7,7 +7,7 @@
     "imageHref": "/img/calculadora.webp",
     "github": "https://github.com/angelcgar/calculadora-react",
     "tags": [
-      "next",
+      "nextjs",
       "react",
       "typescript"
     ]
@@ -20,7 +20,7 @@
     "imageHref": "/img/listaTareas.webp",
     "github": "https://github.com/angelcgar/aplicacion-react-tareas",
     "tags": [
-      "next",
+      "nextjs",
       "react",
       "bun"
     ]
@@ -46,7 +46,7 @@
     "imageHref": "/img/candy-crush.webp",
     "github": "https://github.com/angelcgar/candy-crush-es",
     "tags": [
-      "vite",
+      "vitejs",
       "javascript",
       "css"
     ]

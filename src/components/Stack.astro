@@ -1,0 +1,81 @@
+---
+import SetStack from './SetStack.jsx'
+import CardSkills from './CardSkills.astro'
+
+const My_STACk = [
+  {
+    name: "html",
+    img: "/svg/html.svg"
+  },
+  {
+    name: "css",
+    img: "/svg/css.svg"
+  },
+  {
+    name: "javascript",
+    img: "/svg/javascript.svg"
+  },
+  {
+    name: "react",
+    img: "/svg/react.svg"
+  },
+  {
+    name: "node.js",
+    img: "/svg/nodejs.svg"
+  },
+  {
+    name: "vite.js",
+    img: "/svg/vitejs.svg"
+  },
+  {
+    name: "tailwind",
+    img: "/svg/tailwind.svg"
+  },
+  {
+    name: "next.js",
+    img: "/svg/nextjs.svg"
+  },
+  {
+    name: "astro",
+    img: "/svg/astro.svg"
+  },
+  {
+    name: "express js",
+    img: "/svg/expressjs.svg"
+  },
+  {
+    name: "angular",
+    img: "/svg/angular.svg"
+  },
+  {
+    name: "android",
+    img: "/svg/android.svg"
+  }
+]
+---
+
+<SetStack client:visible>
+
+    <h2 class="text-5xl font-bold my-5 text-center">Habilidades</h2>
+    
+    <ul class="grid grid-cols-2 md:grid-cols-4 gap-2">
+    
+      {
+        My_STACk.map((stack) => (
+          <li>
+            <CardSkills>
+              <img src={stack.img} class="w-20 m-auto h-20" alt="" />
+              <p class="mt-4 uppercase font-semibold text-green-100">{stack.name}</p>
+              </CardSkills>
+          </li>
+        ))
+      }
+    </ul> 
+</SetStack>
+
+<style>
+  
+  img {
+    aspect-ratio: 1 / 1;
+  }
+</style>
