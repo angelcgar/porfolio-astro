@@ -1,27 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro'
-
-// Components
-import Hero from '../components/Hero.astro'
-import Experience from '../components/Experience.astro'
-import Projects from '../components/Projects.astro'
-import Skills from "../components/Skills.astro"
+import App from '../components/pages/App.astro'
 ---
 
-<Layout
-  title="Portafolio de angelcgar ~ Desarrollador y Programador Web."
-  descrition="Portafolio de angelcgar."
->
-  <div
-    class="max-w-full m-auto mt-16 pb-20 px-1 md:px-4 lg:w-[900px] p-1 md:p-4 leading-normal"
-  >
-
-    <Hero />
-    <Experience />
-    <Projects />
-    <Skills />
-
-  </div>
-</Layout>
-
-<style></style>
+<App />
