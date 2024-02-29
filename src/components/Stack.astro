@@ -54,7 +54,7 @@ const My_STACk = [
 ]
 ---
 
-<SetStack client:load>
+<SetStack client:visible>
 
     <h2 class="text-5xl font-bold my-5 text-center">Habilidades</h2>
     
@@ -62,11 +62,20 @@ const My_STACk = [
     
       {
         My_STACk.map((stack) => (
-          <CardSkills>
-            <img src={stack.img} class="w-20 m-auto h-20" alt="" />
-            <p class="mt-4 uppercase font-semibold text-green-100">{stack.name}</p>
-          </CardSkills>
+          <li>
+            <CardSkills>
+              <img src={stack.img} class="w-20 m-auto h-20" alt="" />
+              <p class="mt-4 uppercase font-semibold text-green-100">{stack.name}</p>
+              </CardSkills>
+          </li>
         ))
       }
     </ul> 
 </SetStack>
+
+<style>
+  
+  img {
+    aspect-ratio: 1 / 1;
+  }
+</style>

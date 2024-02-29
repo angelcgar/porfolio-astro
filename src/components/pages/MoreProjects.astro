@@ -6,6 +6,7 @@ import CardProjects from '../CardProjects.astro'
 
 // Config mas-projects.json
 import projects from '../../config/mas-projects.json'
+import Stack from '../Stack.astro'
 ---
 
 <Layout title="Seccion contacto" descrition="mi descripcion">
@@ -15,9 +16,11 @@ import projects from '../../config/mas-projects.json'
     <div class="grid md:grid-cols-2 gap-4 p-4">
       {
         projects.map((project) => (
-            <CardProjects project={project} />
-          ))
-        }
+          <CardProjects project={project} />
+        ))
+      }
     </div>
   </div>
+  
+  <Stack client:load />
 </Layout>
