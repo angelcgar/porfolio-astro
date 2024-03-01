@@ -7,9 +7,9 @@
     "imageHref": "/img/calculadora.webp",
     "github": "https://github.com/angelcgar/calculadora-react",
     "tags": [
-      "nextjs",
-      "react",
-      "typescript"
+      "/svg/nextjs.svg",
+      "/svg/react.svg",
+      "/svg/typescript.svg"
     ]
   },
   {
@@ -20,9 +20,9 @@
     "imageHref": "/img/listaTareas.webp",
     "github": "https://github.com/angelcgar/aplicacion-react-tareas",
     "tags": [
-      "nextjs",
-      "react",
-      "bun"
+      "/svg/nextjs.svg",
+      "/svg/react.svg",
+      "/svg/bun.svg"
     ]
   },
   {
@@ -33,9 +33,9 @@
     "imageHref": "/img/documentacion.webp",
     "github": "https://github.com/angelcgar/first-documentation",
     "tags": [
-      "astro",
-      "starlight",
-      "html"
+      "/svg/astro.svg",
+      "/img/starlight.webp",
+      "/svg/html.svg"
     ]
   },
   {
@@ -46,9 +46,9 @@
     "imageHref": "/img/candy-crush.webp",
     "github": "https://github.com/angelcgar/candy-crush-es",
     "tags": [
-      "vitejs",
-      "javascript",
-      "css"
+      "/svg/vitejs.svg",
+      "/svg/javascript.svg",
+      "/svg/css.svg"
     ]
   }
 ]
