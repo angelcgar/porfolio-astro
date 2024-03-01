@@ -15,16 +15,18 @@ const TAGS = project.tags
   <div class="grid grid-cols-3 items-end justify-items-center content-stretch">
     
     <!--* para cada tag, haz una pastilla-->
-    {TAGS &&
-      TAGS.map((tag: string) => (
-        <div class="inline-flex h-6 max-w-max cursor-default items-center justify-evenly flex-col content-center gap-1 rounded-[64px] px-2 py-1 text-center text-xs font-semibold leading-relaxed bg-blue-700 text-white [&amp;>div>img]:stroke-white flex-wrap mt-2">
-          <div class="inline-flex size-[18px] items-center justify-start overflow-hidden">  
-            <img src={tag === "starlight" ? `/img/${tag}.webp` : `/svg/${tag}.svg`} class="w-6 h-auto pl-2 aspect-square" alt="">
+    <!-- {
+      TAGS &&
+        TAGS.map((tag: string) => (
+          <div class="inline-flex h-6 max-w-max cursor-default items-center justify-evenly flex-col content-center gap-1 rounded-[64px] px-2 py-1 text-center text-xs font-semibold leading-relaxed bg-blue-700 text-white [&amp;>div>img]:stroke-white flex-wrap mt-2">
+            <div class="inline-flex size-[18px] items-center justify-start overflow-hidden">  
+              <img src={tag === "starlight" ? `/img/${tag}.webp` : `/svg/${tag}.svg`} class="w-6 h-auto pl-2 aspect-square" alt="">
+            </div>
+            <span class="ml-1">{tag}</span>
           </div>
-          <span class="ml-1">{tag}</span>
-        </div>
-      ))
-    }
+        )
+      )
+    } -->
   </div>
   
   <h2 class="text-2xl font-bold my-4">{project.title}</h2>
