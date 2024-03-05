@@ -4,26 +4,32 @@ import ExperienceItem from '../components/ExperienceItem.astro'
 const EXPERIENCIE = [
   {
     date: "Actualmente...",
-    title: "Estudiante autodidacta",
+    title: "Aprendizaje autodidacta y desarrollo de habilidades",
     description:
-      "Estudio por diversas fuentes, me encanta curosiar las nuevas tecnologias. Estoy leyendo y dando el mejor esfuerzo posible para comprender a los proyectos de codigo abierto, por esa razon, yo puedo tener una vista diferente al proyecto en turno.",
+      "Soy un estudiante autodidacta apasionado por la tecnología. Dedico mi tiempo a aprender de diversas fuentes, como cursos online en plataformas como Udemy y Coursera, libros de autores reconocidos como Robert Martin y Eric S. Raymond, tutoriales en YouTube y blogs especializados en diferentes lenguajes de programación. Me encanta curiosear las nuevas tecnologías y comprender su funcionamiento, como el blockchain, la inteligencia artificial y el Internet de las cosas.",
     // link: "https://github.com/angelcgar",
   },
   {
     date: "Septiembre 2022",
-    title: "Despliege de paginas Web por diferentes Hostings",
+    title: "Desarrollador web - Despliegue de sitios web en diferentes hostings",
     description:
-      "Fui el programador que desplego mas de 10 paginas Web con tan solo semanas de experiencias en el mundo del desarrollo web, lo cual demuestra mis capacidades de leer, entender, analizar y tomar decisiones mas favoranbles.",
+      "Desarrollé y desplegué más de 10 sitios web en diferentes plataformas de hosting como Hostinger, GoDaddy y AWS. Esto lo logré en tan solo tres semanas después de haber comenzado mi carrera como desarrollador web, lo que demuestra mi capacidad para:",
+    skills: [
+      "Aprender rápidamente, ",
+      "Leer y entender código, ",
+      "Analizar problemas, ",
+      "Tomar decisiones favorables.",
+    ]
   }
 ];
 ---
 
 <section class="bg-ancg-950 p-5 md:p-10 rounded-md my-4 mx-1 container">
-  <h2 class="text-5xl font-bold my-5">Experiencia laboral</h2>
+  <h2 class="text-2xl md:text-3xl font-bold my-5">Experiencia laboral</h2>
   <ol class="relative border-s border-gray-200 ml-3">
     {
       EXPERIENCIE.map((experiencie) => (
-        <li class="m-10 ms-4 p-9">
+        <li class="m-5 ms-4 p-9">
           <ExperienceItem {...experiencie} />
         </li>
       ))
