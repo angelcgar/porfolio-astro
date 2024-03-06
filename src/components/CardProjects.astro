@@ -20,7 +20,7 @@ const TAGS = project.tags
           const imageName = tag.split('/').pop()!.replace('.svg', '').replace('.webp', '');
 
           return (
-            <div class="inline-flex h-6 max-w-max cursor-default items-center justify-evenly flex-col content-center gap-1 rounded-[64px] px-2 py-1 text-center text-xs font-semibold leading-relaxed bg-blue-900 text-white [&amp;>div>img]:stroke-white flex-wrap mt-2">
+            <div class="inline-flex h-6 max-w-max cursor-default items-center justify-evenly flex-col content-center gap-1 rounded-[64px] px-2 py-1 text-center text-xs font-semibold leading-relaxed bg-transparent text-white [&amp;>div>img]:stroke-white flex-wrap mt-2">
               <div class="inline-flex size-[18px] items-center justify-start overflow-hidden">  
                 <img src={tag} class="w-7 h-auto pl-1 aspect-square" alt={`mi ${imageName}`}>
               </div>
