@@ -16,9 +16,9 @@
     "name": "Lista de Tareas",
     "title": "Mi Lista de Tareas",
     "body": "Este es mi Lista de Tareas que fue hecho con React",
-    "href": "https://poetic-quokka-826849.netlify.app/",
-    "imageHref": "/img/listaTareas.webp",
-    "github": "https://github.com/angelcgar/aplicacion-react-tareas",
+    "href": "https://faztweb.github.io/react-tasksapp-localstorage/",
+    "imageHref": "/img/listaDeTareas.webp",
+    "github": "https://faztweb.github.io/react-tasksapp-localstorage/",
     "tags": [
       "/svg/nextjs.svg",
       "/svg/react.svg",
