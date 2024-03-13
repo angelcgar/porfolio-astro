@@ -1,32 +1,33 @@
 ---
-import Layout from '../../layouts/Layout.astro'
+import Layout from '@/layouts/Layout.astro'
 
-import EmailIcon from '../../icons/EmailIcon.astro'
+import EmailIcon from '@/icons/EmailIcon.astro'
 ---
 
-<Layout title="Seccion contacto" descrition="mi descripcion">
+<Layout 
+title="Seccion contacto de angelcgar"
+descrition="mi pagina para que puedeas contactarme y trabajar">
   <div
     class="max-w-5xl m-auto mt-16 pb-20 px-1 md:px-4 lg:w-[900px] p-1 md:p-4 leading-normal"
   >
     <header
       class="bg-ancg-800 flex flex-col  md:text-left p-20 gap-3 rounded-xl"
     >
-      <h1 class="text-5xl font-bold pb-3">Contactame</h1>
-      <p class="text-2xl">Quieres trabajar conmigo</p>
-      <p>Enviame un correo para que podamos trabajar en tu proyecto que tan bueno sea</p>
-      <p>Si tienes alguna duda o consulta no se preocupe puedes mandarme un correo a mi email</p>
+      <h1 class="text-2xl md:text-3xl font-bold pb-3">Trabajemos juntos</h1>
+      <h2 class="text-2xl">¿Te interesa trabajar conmigo?</h2>
+      <p>¡Envíame un correo electrónico y hablemos sobre tu proyecto! Estoy abierto a proyectos de todo tipo, desde pequeñas tareas hasta grandes desarrollos.</p>
+      <h2 class="text-2xl">¿Tienes alguna duda o consulta?</h2>
+      <p>No dudes en contactarme. Estoy aquí para ayudarte a resolver cualquier duda que tengas sobre mis servicios o sobre cualquier otro tema relacionado con la informática.</p>
 
       <div class="flex flex-row gap-y-1 mt-2">
 
-        <code class="bg-slate-800 p-2 rounded-md">ac5802021@gmail.com</code>
+        <code class="bg-slate-800 px-2 rounded-md flex justify-center items-center">ac5802021@gmail.com</code>
         <a target="_blank" rel="noopener noreferrer" href="mailto:ac5802021@gmail.com">
-          <EmailIcon class="size-9 hover:text-ancg-400" />
+          <EmailIcon class="size-9 hover:text-ancg-400 mx-2" />
         </a>
       </div>
     </header>
   
-    <!-- <div class="bg-ancg-800 p-10 rounded-xl flex flex-row gap-2 mt-3">
-    </div> -->
   </div>
 </Layout>
 
