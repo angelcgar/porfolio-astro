@@ -1,12 +1,15 @@
 ---
-import Layout from '../../layouts/Layout.astro'
+import Layout from '@/layouts/Layout.astro'
 
 // Components
-import CardProjects from '../CardProjects.astro'
+import CardProjects from '@/components/CardProjects.astro'
+import StackFront from '@/components/StackFront.astro'
+import StackBack from '@/components/StackBack.astro'
+import StackMore from '@/components/StackMore.astro'
+import StackStudy from '@/components/StackStudy.astro'
 
 // Config mas-projects.json
-import projects from '../../config/mas-projects.json'
-import Stack from '../Stack.astro'
+import projects from '@/config/mas-projects.json'
 ---
 
 <Layout title="Seccion contacto" descrition="mi descripcion">
@@ -22,5 +25,11 @@ import Stack from '../Stack.astro'
     </div>
   </div>
   
-  <Stack />
+  <div class="grid grid-cols-2 gap-4">
+
+    <StackFront />
+    <StackBack />
+    <StackMore />
+    <StackStudy />
+  </div>
 </Layout>
