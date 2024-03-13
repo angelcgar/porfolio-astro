@@ -4,6 +4,9 @@ const { project } = Astro.props
 
 const TAGS = project.tags
 
+import GithubIcon from '@/icons/GithubIcon.astro'
+import ExternalLink from '@/icons/ExternalLink.astro'
+
 ---
 
 <div class="bg-ancg-950 p-5 rounded-xl ">
@@ -39,10 +42,10 @@ const TAGS = project.tags
 
   <div class="pl-2">
     <button class=" bg-sky-700 hover:bg-sky-600 p-1 mt-5 justify-evenly rounded-md">
-      <a target="_blank" rel="noopener" href={project.github}>Ver Repositorio</a>
+      <a class="flex flex-row" target="_blank" rel="noopener" href={project.github}><GithubIcon class="mr-2" />Ver Repositorio</a>
     </button>
     <button class=" bg-sky-700 hover:bg-sky-600 p-1 ml-3 mt-5 justify-evenly rounded-md">
-      <a target="_blank" rel="noopener" href={project.href}>Proyecto en vivo</a>
+      <a class="flex flex-row" target="_blank" rel="noopener" href={project.href}><ExternalLink />Proyecto en vivo</a>
     </button>
   </div>
 </div>
