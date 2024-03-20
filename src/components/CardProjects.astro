@@ -40,12 +40,12 @@ import ExternalLink from '@/icons/ExternalLink.astro'
     <p>{project.body}</p>
   </div>
 
-  <div class="pl-2">
-    <button class=" bg-sky-700 hover:bg-sky-600 p-1 mt-5 justify-evenly rounded-md">
-      <a class="flex flex-row" target="_blank" rel="noopener" href={project.github}><GithubIcon class="mr-2" />Ver Repositorio</a>
+  <div class="pl-2 flex lg:flex-row flex-col gap-x-3">
+    <button class=" bg-sky-700 hover:bg-sky-600 p-2 mt-5 justify-evenly rounded-md">
+      <a class="flex flex-row justify-center items-center" target="_blank" rel="noopener" href={project.github}><GithubIcon class="mr-2 size-6" />Ver Repositorio</a>
     </button>
-    <button class=" bg-sky-700 hover:bg-sky-600 p-1 ml-3 mt-5 justify-evenly rounded-md">
-      <a class="flex flex-row" target="_blank" rel="noopener" href={project.href}><ExternalLink />Proyecto en vivo</a>
+    <button class=" bg-sky-700 hover:bg-sky-600 p-2 mt-5 justify-evenly rounded-md">
+      <a class="flex flex-row justify-center items-center" target="_blank" rel="noopener" href={project.href}><ExternalLink class="mr-2 size-6" />Proyecto en vivo</a>
     </button>
   </div>
 </div>
