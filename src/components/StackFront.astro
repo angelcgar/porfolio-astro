@@ -5,23 +5,23 @@ import CardSkills from './CardSkills.astro'
 const My_STACk = [
   {
     name: "html",
-    img: "/svg/html.svg"
+    img: "/svg/HTML.svg"
   },
   {
     name: "css",
-    img: "/svg/css.svg"
+    img: "/svg/CSS.svg"
   },
   {
     name: "javascript",
-    img: "/svg/javascript.svg"
+    img: "/svg/JavaScript.svg"
   },
   {
     name: "react",
-    img: "/svg/react.svg"
+    img: "/svg/React.svg"
   },
   {
     name: "vite.js",
-    img: "/svg/vitejs.svg"
+    img: "/svg/ViteJs.svg"
   },
   {
     name: "tailwind",
@@ -29,11 +29,11 @@ const My_STACk = [
   },
   {
     name: "next.js",
-    img: "/svg/nextjs.svg"
+    img: "/svg/NextJs.svg"
   },
   {
     name: "astro",
-    img: "/svg/astro.svg"
+    img: "/svg/Astro.svg"
   }
 ]
 ---
@@ -47,7 +47,7 @@ const My_STACk = [
         My_STACk.map((stack) => (
           <li>
             <CardSkills>
-              <img src={stack.img} class="w-10 m-auto h-10" alt="un svg" />
+              <img src={stack.img} class="w-10 m-auto h-10" alt={`un svg de ${stack.name}`} />
               <p class="mt-4 uppercase font-semibold text-green-100">{stack.name}</p>
               </CardSkills>
           </li>
