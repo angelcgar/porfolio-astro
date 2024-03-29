@@ -13,12 +13,12 @@
     ]
   },
   {
-    "name": "Tienda",
-    "title": "Mi Tienda sobre computadoras",
-    "body": "Aplicacion Full stack, que se sirve muy rapido y consume una API que yo mismo he programado",
+    "name": "Buscador de peliculas",
+    "title": "Buscador de peliculas",
+    "body": "Aplicacion Full stack, que se sirve muy rapido y consume una KEY_API, funciona bien para trabajar con una api",
     "href": "https://joyful-cannoli-81bf1e.netlify.app/",
-    "imageHref": "/img/tienda.webp",
-    "github": "https://github.com/angelcgar/slimbuuk",
+    "imageHref": "/img/peliculas.webp",
+    "github": "https://github.com/angelcgar/aprendiendo-react/tree/main/projects/05-react-buscador-peliculas",
     "tags": [
       "/svg/NextJs.svg",
       "/svg/React.svg",
@@ -39,12 +39,12 @@
     ]
   },
   {
-    "name": "calculadora",
-    "title": "Mi Calculadora",
-    "body": "Este es mi calculadora mas importante de todos mis proyectos",
-    "href": "https://amazing-queijadas-ba02d4.netlify.app/",
-    "imageHref": "/img/calculadora.webp",
-    "github": "https://github.com/angelcgar/calculadora-react",
+    "name": "Pokedex",
+    "title": "Mi Pokedex",
+    "body": "Este es mi projecto en donde hice una pokedex, muy divertida para buscar pokemons",
+    "href": "https://flourishing-kataifi-ea0631.netlify.app/",
+    "imageHref": "/img/pokedex.webp",
+    "github": "https://github.com/angelcgar/pokedex",
     "tags": [
       "/svg/NextJs.svg",
       "/svg/React.svg",
