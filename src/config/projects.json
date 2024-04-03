@@ -2,7 +2,7 @@
   {
     "name": "calculadora",
     "title": "Mi Calculadora",
-    "body": "Este es mi calculadora mas importante de todos mis proyectos",
+    "body": "Este es mi calculadora más importante de todos mis proyectos",
     "href": "https://amazing-queijadas-ba02d4.netlify.app/",
     "imageHref": "/img/calculadora.webp",
     "github": "https://github.com/angelcgar/calculadora-react",
@@ -26,9 +26,9 @@
     ]
   },
   {
-    "name": "Documentacion",
+    "name": "Documentación",
     "title": "Documentacion",
-    "body": "Aplicacion Full stack, que se sirve muy rapido y consume una API que yo mismo he programado",
+    "body": "Aplicacion Full stack, que se sirve muy rápido y consume una API que yo mismo he programado",
     "href": "https://first-documentation-f04itxr5m-angelcgars-projects.vercel.app/",
     "imageHref": "/img/documentacion.webp",
     "github": "https://github.com/angelcgar/first-documentation",
@@ -41,7 +41,7 @@
   {
     "name": "Candy crush",
     "title": "Candy crush",
-    "body": "En este proyecto, yo realice un juego con javascript puro, ademas de que es muy entretenido",
+    "body": "En este proyecto, yo realice un juego con javascript puro, además de que es muy entretenido",
     "href": "https://candy-crush-es.vercel.app/",
     "imageHref": "/img/candy-crush.webp",
     "github": "https://github.com/angelcgar/candy-crush-es",
