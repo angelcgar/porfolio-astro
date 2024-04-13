@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css'
 import '../styles/css-reset-2024.css'
+
+import SEO from '@/components/SEO.astro'
 import Footer from '../components/Footer.astro'
 
 import {ViewTransitions} from 'astro:transitions'
@@ -14,17 +16,11 @@ const { title, descrition } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content={descrition} />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <SEO {title} {descrition} />
     <ViewTransitions />
   </head>
-
 
   <body>
     <main class="mx-auto md:pt-10 container">
