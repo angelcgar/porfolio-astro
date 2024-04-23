@@ -1,5 +1,7 @@
-- [] Agregar mas mejoras SEO
-- [] Actualizar los proyectos
+- [x] Agregar mas mejoras SEO
+- [] Actualizar los proyectos de La galeria, la documentacion y la aplicacion de electron
+- [] Leer la documentacion de Astro DB
+- [] Hacer un renderizado condicional a los botones 
 - [] Hacer un pequeño back-end
 - [] Ajustar los colores de la seccion Experiencia laboral
 - [] Hacer que la fecha sea dinamica

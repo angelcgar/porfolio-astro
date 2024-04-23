@@ -13,3 +13,26 @@ const { descrition, title } = Astro.props;
 <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
 <title>{title}</title>
+
+<!-- SEO -->
+
+<meta name="description" content="Portafolio de ContrerasCode, desarrollador web y programador fulstack en javascript">
+
+<!-- Open Graph / Facebook -->
+
+<meta property="og:title" content={title} />
+<meta property="og:description" content={descrition} />
+<meta property="og:image" content="public/img/avatar1.webp" />
+<meta property="og:image:alt" content="Una imagen de angel que esta echa con IA" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+
+<link rel="canonical" href="https://porfolio-astro-neon.vercel.app/">
+
+<meta name="robots" content="index, follow" />
+<meta
+  name="keywords"
+  content="angel, garcia, portfolio, contrerascode, frontend"
+/>
+<meta name="author" content="Angel Contreras Garcia" />
+<meta name="theme-color" content="#09f" />
