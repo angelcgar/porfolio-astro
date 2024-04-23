@@ -1,0 +1,74 @@
+{
+  "frontend": [
+    {
+      "name": "html",
+      "img": "/svg/HTML.svg"
+    },
+    {
+      "name": "css",
+      "img": "/svg/CSS.svg"
+    },
+    {
+      "name": "javascript",
+      "img": "/svg/JavaScript.svg"
+    },
+    {
+      "name": "react",
+      "img": "/svg/React.svg"
+    },
+    {
+      "name": "vite.js",
+      "img": "/svg/ViteJs.svg"
+    },
+    {
+      "name": "tailwind",
+      "img": "/svg/tailwind.svg"
+    },
+    {
+      "name": "next.js",
+      "img": "/svg/NextJs.svg"
+    },
+    {
+      "name": "astro",
+      "img": "/svg/Astro.svg"
+    }
+  ],
+  "backend": [
+    {
+      "name": "node.js",
+      "img": "/svg/nodejs.svg"
+    },
+    {
+      "name": "express js",
+      "img": "/svg/expressjs.svg"
+    },
+    {
+      "name": "bun",
+      "img": "/svg/Bun.svg"
+    }
+  ],
+  "tools": [
+    {
+      "name": "git",
+      "img": "/svg/git.svg"
+    },
+    {
+      "name": "github",
+      "img": "/svg/github.svg"
+    },
+    {
+      "name": "python",
+      "img": "/svg/python.svg"
+    }
+  ],
+  "study": [
+    {
+      "name": "angular",
+      "img": "/svg/angular.svg"
+    },
+    {
+      "name": "android",
+      "img": "/svg/android.svg"
+    }
+  ]
+}

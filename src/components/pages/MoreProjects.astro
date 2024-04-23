@@ -10,6 +10,7 @@ import StackStudy from '@/components/StackStudy.astro'
 
 // Config mas-projects.json
 import projects from '@/config/mas-projects.json'
+import Stack from '../Stack.astro'
 ---
 
 <Layout title="Seccion contacto" descrition="mi descripcion">
@@ -25,11 +26,12 @@ import projects from '@/config/mas-projects.json'
     </div>
   </div>
   
-  <div class="grid grid-cols-2 gap-4">
+  <div class="pt-24 container mx-auto px-2 lg:w-[740px]">
 
-    <StackFront />
-    <StackBack />
-    <StackMore />
-    <StackStudy />
+    <!-- <div class="grid grid-cols-2 gap-4"> -->
+    
+      <Stack />
+    
+    <!-- </div> -->
   </div>
 </Layout>
