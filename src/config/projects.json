@@ -29,9 +29,9 @@
     "name": "Documentación",
     "title": "Documentacion",
     "body": "Aplicacion Full stack, que se sirve muy rápido y consume una API que yo mismo he programado",
-    "href": "https://first-documentation-f04itxr5m-angelcgars-projects.vercel.app/",
+    "href": "https://documentacion-java.vercel.app/",
     "imageHref": "/img/documentacion.webp",
-    "github": "https://github.com/angelcgar/first-documentation",
+    "github": "https://github.com/angelcgar/documentacion-java",
     "tags": [
       "/svg/Astro.svg",
       "/img/Starlight.webp",
