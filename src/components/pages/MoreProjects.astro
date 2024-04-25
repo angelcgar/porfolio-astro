@@ -3,10 +3,6 @@ import Layout from '@/layouts/Layout.astro'
 
 // Components
 import CardProjects from '@/components/CardProjects.astro'
-import StackBack from '@/components/StackBack.astro'
-import StackFront from '@/components/StackFront.astro'
-import StackMore from '@/components/StackMore.astro'
-import StackStudy from '@/components/StackStudy.astro'
 
 // Config mas-projects.json
 import projects from '@/config/mas-projects.json'
@@ -16,7 +12,7 @@ import Stack from '../Stack.astro'
 <Layout title="Seccion contacto" descrition="mi descripcion">
   <div class="max-w-5xl m-auto mt-16 pb-20 px-1 md:px-4 lg:w-[900px] p-1 md:p-4 leading-normal">
     <h1 class="text-5xl text-center font-bold pb-4">Mas proyectos</h1>
-    
+
     <div class="grid md:grid-cols-2 gap-4 p-4">
       {
         projects.map((project) => (
@@ -25,13 +21,10 @@ import Stack from '../Stack.astro'
       }
     </div>
   </div>
-  
+
   <div class="pt-24 container mx-auto px-2 lg:w-[740px]">
 
-    <!-- <div class="grid grid-cols-2 gap-4"> -->
-    
-      <Stack />
-    
-    <!-- </div> -->
+    <Stack />
+
   </div>
 </Layout>
