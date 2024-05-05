@@ -16,18 +16,24 @@ const { descrition, title } = Astro.props;
 
 <!-- SEO -->
 
-<meta name="description" content="Portafolio de ContrerasCode, desarrollador web y programador fulstack en javascript">
+<meta
+  name="description"
+  content="Portafolio de ContrerasCode, desarrollador web y programador fulstack en javascript"
+/>
 
 <!-- Open Graph / Facebook -->
 
 <meta property="og:title" content={title} />
 <meta property="og:description" content={descrition} />
 <meta property="og:image" content="public/img/avatar1.webp" />
-<meta property="og:image:alt" content="Una imagen de angel que esta echa con IA" />
+<meta
+  property="og:image:alt"
+  content="Una imagen de angel que esta echa con IA"
+/>
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
 
-<link rel="canonical" href="https://porfolio-astro-neon.vercel.app/">
+<link rel="canonical" href="https://porfolio-astro-neon.vercel.app/" />
 
 <meta name="robots" content="index, follow" />
 <meta

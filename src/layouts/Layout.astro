@@ -1,11 +1,11 @@
 ---
-import '@/styles/global.css'
-import '@/styles/css-reset-2024.css'
+import '@/styles/global.css';
+import '@/styles/css-reset-2024.css';
 
-import SEO from '@/components/SEO.astro'
-import Footer from '@/components/Footer.astro'
+import SEO from '@/components/SEO.astro';
+import Footer from '@/components/Footer.astro';
 
-import {ViewTransitions} from 'astro:transitions'
+import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
   title: string;
@@ -27,16 +27,15 @@ const { title, descrition } = Astro.props;
       <slot />
     </main>
     <Footer />
+    <style is:global>
+      :root {
+        color-scheme: dark light;
+      }
+
+      html {
+        font-family: system-ui, sans-serif;
+        background: #13151a;
+      }
+    </style>
   </body>
-
-  <style is:global>
-    :root {
-      color-scheme: dark light;
-    }
-
-    html {
-      font-family: system-ui, sans-serif;
-      background: #13151a;
-    }
-  </style>
 </html>

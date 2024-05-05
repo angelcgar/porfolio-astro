@@ -6,11 +6,7 @@
     "href": "https://65946ac2adc6ff0a49bef6c8--cheerful-tulumba-6526bc.netlify.app/",
     "imageHref": "/img/snake.webp",
     "github": "https://github.com/angelcgar/snake",
-    "tags": [
-      "/svg/NextJs.svg",
-      "/svg/React.svg",
-      "/svg/CSS.svg"
-    ]
+    "tags": ["/svg/NextJs.svg", "/svg/React.svg", "/svg/CSS.svg"]
   },
   {
     "name": "Buscador de peliculas",
@@ -19,11 +15,7 @@
     "href": "https://joyful-cannoli-81bf1e.netlify.app/",
     "imageHref": "/img/peliculas.webp",
     "github": "https://github.com/angelcgar/aprendiendo-react/tree/main/projects/05-react-buscador-peliculas",
-    "tags": [
-      "/svg/NextJs.svg",
-      "/svg/React.svg",
-      "/svg/HTML.svg"
-    ]
+    "tags": ["/svg/NextJs.svg", "/svg/React.svg", "/svg/HTML.svg"]
   },
   {
     "name": "Lista de Tareas",
@@ -32,11 +24,7 @@
     "href": "https://poetic-quokka-826849.netlify.app/",
     "imageHref": "/img/listaTareas.webp",
     "github": "https://github.com/angelcgar/aplicacion-react-tareas",
-    "tags": [
-      "/svg/NextJs.svg",
-      "/svg/React.svg",
-      "/svg/Bun.svg"
-    ]
+    "tags": ["/svg/NextJs.svg", "/svg/React.svg", "/svg/Bun.svg"]
   },
   {
     "name": "Pokedex",
@@ -45,11 +33,7 @@
     "href": "https://flourishing-kataifi-ea0631.netlify.app/",
     "imageHref": "/img/pokedex.webp",
     "github": "https://github.com/angelcgar/pokedex",
-    "tags": [
-      "/svg/NextJs.svg",
-      "/svg/React.svg",
-      "/svg/HTML.svg"
-    ]
+    "tags": ["/svg/NextJs.svg", "/svg/React.svg", "/svg/HTML.svg"]
   },
   {
     "name": "Portafolio",

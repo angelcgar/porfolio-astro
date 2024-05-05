@@ -6,11 +6,7 @@
     "href": "https://amazing-queijadas-ba02d4.netlify.app/",
     "imageHref": "/img/calculadora.webp",
     "github": "https://github.com/angelcgar/calculadora-react",
-    "tags": [
-      "/svg/NextJs.svg",
-      "/svg/React.svg",
-      "/svg/TypeScript.svg"
-    ]
+    "tags": ["/svg/NextJs.svg", "/svg/React.svg", "/svg/TypeScript.svg"]
   },
   {
     "name": "Lista de Tareas",
@@ -19,11 +15,7 @@
     "href": "https://faztweb.github.io/react-tasksapp-localstorage/",
     "imageHref": "/img/listaDeTareas.webp",
     "github": "https://faztweb.github.io/react-tasksapp-localstorage/",
-    "tags": [
-      "/svg/NextJs.svg",
-      "/svg/React.svg",
-      "/svg/Bun.svg"
-    ]
+    "tags": ["/svg/NextJs.svg", "/svg/React.svg", "/svg/Bun.svg"]
   },
   {
     "name": "Documentación",
@@ -32,11 +24,7 @@
     "href": "https://documentacion-java.vercel.app/",
     "imageHref": "/img/documentacion.webp",
     "github": "https://github.com/angelcgar/documentacion-java",
-    "tags": [
-      "/svg/Astro.svg",
-      "/img/Starlight.webp",
-      "/svg/HTML.svg"
-    ]
+    "tags": ["/svg/Astro.svg", "/img/Starlight.webp", "/svg/HTML.svg"]
   },
   {
     "name": "Candy crush",
@@ -45,10 +33,6 @@
     "href": "https://candy-crush-es.vercel.app/",
     "imageHref": "/img/candy-crush.webp",
     "github": "https://github.com/angelcgar/candy-crush-es",
-    "tags": [
-      "/svg/ViteJs.svg",
-      "/svg/JavaScript.svg",
-      "/svg/CSS.svg"
-    ]
+    "tags": ["/svg/ViteJs.svg", "/svg/JavaScript.svg", "/svg/CSS.svg"]
   }
 ]

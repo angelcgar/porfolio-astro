@@ -1,27 +1,38 @@
 ---
-import SetStack from './SetStack.jsx'
+import SetStack from './SetStack.jsx';
 
 // json
-import { frontend, backend, tools, study } from '@/config/stack.json'
+import { frontend, backend, tools, study } from '@/config/stack.json';
 ---
 
 <h2 class="text-5xl text-center font-bold pb-4">Tecnologías</h2>
 
-<p class="my-8 text-pretty md:text-lg max-w-[740px]">En mi viaje por el mundo del desarrollo web, he cultivado experiencia y habilidades en una varía de tecnologías. Estas son algunas de las herramientas que he aprendido.</p>
+<p class="my-8 text-pretty md:text-lg max-w-[740px]">
+  En mi viaje por el mundo del desarrollo web, he cultivado experiencia y
+  habilidades en una varía de tecnologías. Estas son algunas de las herramientas
+  que he aprendido.
+</p>
 
-<section class="grid lg:grid-cols-2 lg:grid-rows-2 gap-6 lg:place-content-center">
-  
+<section
+  class="grid lg:grid-cols-2 lg:grid-rows-2 gap-6 lg:place-content-center"
+>
   <SetStack client:visible>
     <h2 class="text-2xl md:text-3xl font-bold pb-3">Front-End</h2>
     <ul class="grid grid-cols-2 md:grid-cols-3 gap-2">
       {
         frontend.map((skill) => (
           <li>
-            <img src={skill.img} class="w-10 m-auto h-10" alt={`un svg de ${skill.name}`} />
-            <p class="mt-4 uppercase font-semibold text-green-100 flex justify-center">{skill.name}</p>
+            <img
+              src={skill.img}
+              class="w-10 m-auto h-10"
+              alt={`un svg de ${skill.name}`}
+            />
+            <p class="mt-4 uppercase font-semibold text-green-100 flex justify-center">
+              {skill.name}
+            </p>
           </li>
         ))
-      } 
+      }
     </ul>
   </SetStack>
 
@@ -31,8 +42,14 @@ import { frontend, backend, tools, study } from '@/config/stack.json'
       {
         backend.map((skill) => (
           <li>
-            <img src={skill.img} class="w-10 m-auto h-10" alt={`un svg de ${skill.name}`} />
-            <p class="mt-4 uppercase font-semibold text-green-100 flex justify-center">{skill.name}</p>
+            <img
+              src={skill.img}
+              class="w-10 m-auto h-10"
+              alt={`un svg de ${skill.name}`}
+            />
+            <p class="mt-4 uppercase font-semibold text-green-100 flex justify-center">
+              {skill.name}
+            </p>
           </li>
         ))
       }
@@ -45,8 +62,14 @@ import { frontend, backend, tools, study } from '@/config/stack.json'
       {
         tools.map((skill) => (
           <li>
-            <img src={skill.img} class="w-10 m-auto h-10" alt={`un svg de ${skill.name}`} />
-            <p class="mt-4 uppercase font-semibold text-green-100 flex justify-center">{skill.name}</p>
+            <img
+              src={skill.img}
+              class="w-10 m-auto h-10"
+              alt={`un svg de ${skill.name}`}
+            />
+            <p class="mt-4 uppercase font-semibold text-green-100 flex justify-center">
+              {skill.name}
+            </p>
           </li>
         ))
       }
@@ -59,8 +82,14 @@ import { frontend, backend, tools, study } from '@/config/stack.json'
       {
         study.map((skill) => (
           <li>
-            <img src={skill.img} class="w-10 m-auto h-10" alt={`un svg de ${skill.name}`} />
-            <p class="mt-4 uppercase font-semibold text-green-100 flex justify-center">{skill.name}</p>
+            <img
+              src={skill.img}
+              class="w-10 m-auto h-10"
+              alt={`un svg de ${skill.name}`}
+            />
+            <p class="mt-4 uppercase font-semibold text-green-100 flex justify-center">
+              {skill.name}
+            </p>
           </li>
         ))
       }
