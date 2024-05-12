@@ -41,6 +41,7 @@
     "body": "Este es mi portafolio que fue hecho con Astro",
     "href": "https://angelcgar.github.io/porfolio-astro/",
     "imageHref": "/img/calculadora.webp",
-    "github": "https://github.com/angelcgar/porfolio-astro"
+    "github": "https://github.com/angelcgar/porfolio-astro",
+    "tags": ["/svg/HTML.svg"]
   }
 ]
