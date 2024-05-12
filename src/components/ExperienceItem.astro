@@ -2,12 +2,11 @@
 interface Props {
   title: string;
   description: string;
-  link?: string;
+  link: string;
   date: string;
-  skills?: string[];
 }
 
-const { title, description, link, date, skills } = Astro.props;
+const { title, description, link, date } = Astro.props;
 ---
 
 <div
@@ -21,11 +20,11 @@ const { title, description, link, date, skills } = Astro.props;
 <p class="mb-4 text-base md:text-lg font-normal text-pretty">
   {description}
 </p>
-{
-  link && (
-    <a
-      href={link}
-      class="bg-white/5
+
+<a
+  aria-label="para ir a mi cuenta de github"
+  href={link}
+  class="bg-white/5
     border dark:border-white/10 border-gray-300
     rounded-full
     inline-flex justify-center items-center gap-x-2
@@ -33,10 +32,6 @@ const { title, description, link, date, skills } = Astro.props;
     text-xs md:text-base
     transition
     hover:scale-110 hover:bg-white/10"
-    >
-      Saber más...
-    </a>
-  )
-}
-
-<p>{skills}</p>
+>
+  Saber más...
+</a>
