@@ -1,4 +1,18 @@
 ---
+interface Proyectos {
+  name: string;
+  title: string;
+  body: string;
+  href: string;
+  imageHref: string;
+  github: string;
+  tags: string[];
+}
+
+interface Props {
+  project: Proyectos;
+}
+
 const { project } = Astro.props;
 
 const TAGS = project.tags;
