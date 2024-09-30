@@ -1,11 +1,10 @@
 ---
-import '@/styles/global.css';
-import '@/styles/css-reset-2024.css';
+import { ViewTransitions } from 'astro:transitions';
 
 import SEO from '@/components/SEO.astro';
 import Footer from '@/components/Footer.astro';
 
-import { ViewTransitions } from 'astro:transitions';
+import '@/styles/css-reset-2024.css';
 
 interface Props {
   title: string;
@@ -23,7 +22,7 @@ const { title, descrition } = Astro.props;
   </head>
 
   <body>
-    <main class="mx-auto md:pt-10 container">
+    <main class="mx-auto md:pt-7 container">
       <slot />
     </main>
     <Footer />
