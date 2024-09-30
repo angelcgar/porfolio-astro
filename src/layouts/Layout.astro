@@ -21,7 +21,7 @@ const { title, descrition } = Astro.props;
     <ViewTransitions />
   </head>
 
-  <body>
+  <body class="bg-slate-100 dark:bg-slate-900 dark:text-white">
     <main class="mx-auto md:pt-7 container">
       <slot />
     </main>
@@ -33,7 +33,6 @@ const { title, descrition } = Astro.props;
 
       html {
         font-family: system-ui, sans-serif;
-        background: #13151a;
       }
     </style>
   </body>

@@ -1,12 +1,9 @@
 ---
 import ExperienceItem from '@/components/ExperienceItem.astro';
 
-const EXPERIENCIE: {
-  date: string;
-  title: string;
-  description: string;
-  link: string;
-}[] = [
+import type { experience } from '@/interfaces';
+
+const EXPERIENCIE: experience[] = [
   {
     date: 'Actualmente...',
     title: 'Aprendizaje autodidacta y desarrollo de habilidades',
@@ -25,7 +22,7 @@ const EXPERIENCIE: {
 ];
 ---
 
-<section class="bg-ancg-950 p-5 md:p-10 rounded-md my-4 mx-1 container">
+<section class="p-5 md:p-10 rounded-md my-4 mx-1 container">
   <h2 class="text-2xl md:text-3xl font-bold my-5">Experiencia laboral</h2>
   <ol class="relative border-s border-gray-200 ml-3">
     {
