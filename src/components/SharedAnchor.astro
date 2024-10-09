@@ -3,15 +3,16 @@ interface Props {
   slot: string;
   href: string;
   arialLabel: string;
+  target?: string;
 }
 
-const { slot, href, arialLabel } = Astro.props;
+const { slot, href, arialLabel, target = '_self' } = Astro.props;
 ---
 
 <a
   aria-label={arialLabel}
-  target="_blank"
-  rel="noopper"
+  target={target}
+  rel="noopener noreferrer"
   href={href}
   class="dark:bg-indigo-900 px-3 py-2 mt-4 dark:hover:bg-indigo-700/80 hover:bg-gray-200 rounded-md"
   >{slot}

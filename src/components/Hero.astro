@@ -1,7 +1,7 @@
 ---
 import SharedAnchor from './SharedAnchor.astro';
 
-const curremViteUrl =
+const curriculumVitaeUrl =
   'https://drive.google.com/file/d/1U9asNWBWoYtfN2oqBHAX5cfN_2_0PrPv/view?usp=sharing';
 ---
 
@@ -11,12 +11,12 @@ const curremViteUrl =
   <div class="flex-1">
     <h1 class="text-2xl md:text-3xl font-bold pb-3">Hey, soy ContrerasCode</h1>
     <p class="text-base md:text-lg max-w-[700px] pb-3">
-      <strong class="dark:text-yellow-300" aria-label="Soy un hacker">
-        No soy un simple programador, soy un hacker de código con alma de
-        artista.
-      </strong>
-      Desde pequeño, me fascinaba la magia de la tecnología y la capacidad de crear
-      mundos virtuales.
+      Un Desarrollador Web Front-End con experiencia en <strong
+        class="dark:text-yellow-300"
+        >HTML5, CSS3, JavaScript, Git y GitHub.</strong
+      >
+      Con conocimientos avanzados en ES6+ y familiaridad con sistemas UNIX. Busco
+      aplicar mis habilidades en el desarrollo de experiencias de usuario excepcionales.
     </p>
 
     <div class="flex gap-1">
@@ -28,7 +28,8 @@ const curremViteUrl =
       <SharedAnchor
         slot="Mas sobre mi"
         arialLabel="ir a mi CV"
-        href={curremViteUrl}
+        href={curriculumVitaeUrl}
+        target="_blank"
       />
     </div>
   </div>
