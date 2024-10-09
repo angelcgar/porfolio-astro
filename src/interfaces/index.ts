@@ -1,1 +1,1 @@
-export type {experience} from './experience.interface'
+export type { experience } from "./experience.interface";
