@@ -1,21 +1,29 @@
 [
   {
-    "name": "calculadora",
-    "title": "Mi Calculadora",
-    "body": "Este es mi calculadora más importante de todos mis proyectos",
-    "href": "https://amazing-queijadas-ba02d4.netlify.app/",
-    "imageHref": "/img/calculadora.webp",
-    "github": "https://github.com/angelcgar/calculadora-react",
-    "tags": ["/svg/ViteJs.svg", "/svg/React.svg", "/svg/JavaScript.svg"]
+    "name": "mario bros",
+    "title": "Super Mario Bros",
+    "body": "Este es un clon del famoso juego Super Mario Bros, hecho con solo TypeScript",
+    "href": "https://visionary-mermaid-bdab86.netlify.app/",
+    "imageHref": "/img/marioBrosTs.webp",
+    "github": "https://github.com/angelcgar/mario-bros-ts",
+    "tags": [
+      "/svg/ViteJs.svg",
+      "/svg/TypeScript.svg",
+      "/svg/HTML.svg"
+    ]
   },
   {
     "name": "Lista de Tareas",
     "title": "Mi Lista de Tareas",
-    "body": "Este es mi Lista de Tareas que fue hecho con React",
-    "href": "https://faztweb.github.io/react-tasksapp-localstorage/",
-    "imageHref": "/img/listaDeTareas.webp",
-    "github": "https://faztweb.github.io/react-tasksapp-localstorage/",
-    "tags": ["/svg/ViteJs.svg", "/svg/React.svg", "/svg/HTML.svg"]
+    "body": "Este es mi Lista de Tareas que fue hecho con solo TypeScript.",
+    "href": "https://spiffy-cascaron-6bc6ed.netlify.app/",
+    "imageHref": "/img/listaTareas.webp",
+    "github": "https://github.com/angelcgar/TSTodoList",
+    "tags": [
+      "/svg/ViteJs.svg",
+      "/svg/TypeScript.svg",
+      "/svg/HTML.svg"
+    ]
   },
   {
     "name": "Documentación",
@@ -24,15 +32,23 @@
     "href": "https://documentacion-java.vercel.app/",
     "imageHref": "/img/documentacion.webp",
     "github": "https://github.com/angelcgar/documentacion-java",
-    "tags": ["/svg/Astro.svg", "/img/Starlight.webp", "/svg/HTML.svg"]
+    "tags": [
+      "/svg/Astro.svg",
+      "/img/Starlight.webp",
+      "/svg/HTML.svg"
+    ]
   },
   {
     "name": "Candy crush",
     "title": "Candy crush",
     "body": "En este proyecto, yo realice un juego con javascript puro, además de que es muy entretenido",
     "href": "https://candy-crush-es.vercel.app/",
-    "imageHref": "/img/candy-crush.webp",
+    "imageHref": "/img/candyCrush.webp",
     "github": "https://github.com/angelcgar/candy-crush-es",
-    "tags": ["/svg/ViteJs.svg", "/svg/JavaScript.svg", "/svg/CSS.svg"]
+    "tags": [
+      "/svg/ViteJs.svg",
+      "/svg/JavaScript.svg",
+      "/svg/CSS.svg"
+    ]
   }
 ]
