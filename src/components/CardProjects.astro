@@ -21,7 +21,9 @@ import GithubIcon from '@/icons/GithubIcon.astro';
 import ExternalLink from '@/icons/ExternalLink.astro';
 ---
 
-<div class="bg-ancg-950 p-5 rounded-xl">
+<div
+  class="bg-ancg-950 p-5 rounded-xl hover:bg-ancg-900/40 hover:shadow-stone-100/30 hover:shadow-lg transition-all duration-300 ease-in-out"
+>
   <img
     src={project.imageHref}
     class="w-72 lg:w-96 h-auto m-auto rounded-md aspect-auto"
@@ -62,23 +64,25 @@ import ExternalLink from '@/icons/ExternalLink.astro';
 
   <div class="pl-2 flex lg:flex-row flex-col gap-x-3">
     <button
+      type="button"
       class="bg-sky-700 hover:bg-sky-600 p-2 mt-5 justify-evenly rounded-md font-medium"
     >
       <a
         class="flex flex-row justify-center items-center"
         target="_blank"
-        rel="noopener"
+        rel="noreferrer noopener"
         href={project.github}
         ><GithubIcon class="mr-2 size-6" />Ver Repositorio</a
       >
     </button>
     <button
+      type="button"
       class="bg-sky-700 hover:bg-sky-600 p-2 mt-5 justify-evenly rounded-md font-medium"
     >
       <a
         class="flex flex-row justify-center items-center"
         target="_blank"
-        rel="noopener"
+        rel="noreferrer noopener"
         href={project.href}
         ><ExternalLink class="mr-2 size-6" />Proyecto en vivo</a
       >
