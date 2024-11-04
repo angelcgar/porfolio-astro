@@ -2,6 +2,7 @@
 import ExperienceItem from '@/components/ExperienceItem.astro';
 
 import type { experience } from '@/interfaces';
+import Title from './Title.astro';
 
 const EXPERIENCIE: experience[] = [
   {
@@ -23,7 +24,7 @@ const EXPERIENCIE: experience[] = [
 ---
 
 <section class="p-5 md:p-10 rounded-md my-4 mx-1 container">
-  <h2 class="text-2xl md:text-3xl font-bold my-5">Experiencia laboral</h2>
+  <Title class="pb-3"> Experiencia laboral </Title>
   <ol class="relative border-s border-gray-200 ml-3">
     {
       EXPERIENCIE.map((experiencie) => (

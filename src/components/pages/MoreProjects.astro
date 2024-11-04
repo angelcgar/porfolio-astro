@@ -6,16 +6,19 @@ import CardProjects from '@/components/CardProjects.astro';
 
 // Config mas-projects.json
 import projects from '@/data/mas-projects.json';
+import Title from '../Title.astro';
 ---
 
 <Layout title="Seccion contacto" descrition="mi descripcion">
   <div
-    class="max-w-5xl m-auto mt-16 pb-20 px-1 md:px-4 lg:w-[900px] p-1 md:p-4 leading-normal"
+    class="max-w-full m-auto mt-5 pb-20 px-1 md:px-4 lg:w-[1000px] p-1 md:p-4 leading-normal"
   >
-    <h1 class="text-5xl text-center font-bold pb-4">Mas proyectos</h1>
+    <section class="p-5 md:p-10 rounded-md my-4 mx-1 container">
+      <Title> Mas proyectos personales </Title>
 
-    <div class="grid md:grid-cols-2 gap-4 p-4">
-      {projects.map((project) => <CardProjects project={project} />)}
-    </div>
+      <div class="grid md:grid-cols-2 gap-6 mt-10">
+        {projects.map((project) => <CardProjects project={project} />)}
+      </div>
+    </section>
   </div>
 </Layout>

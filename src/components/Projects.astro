@@ -5,18 +5,21 @@ import projects from '@/data/projects.json';
 // Componente
 import CardProjects from '@/components/CardProjects.astro';
 import SharedAnchor from './SharedAnchor.astro';
+import Title from './Title.astro';
 ---
 
-<h1 class="text-center font-bold text-5xl mt-10">Proyectos</h1>
+<section class="p-5 md:p-10 rounded-md my-4 mx-1 container">
+  <Title class=""> Mis proyectos </Title>
 
-<div class="grid md:grid-cols-2 gap-6 p-4 mt-10">
-  {projects.map((project) => <CardProjects project={project} />)}
-</div>
+  <div class="grid md:grid-cols-2 gap-6 mt-10">
+    {projects.map((project) => <CardProjects project={project} />)}
+  </div>
 
-<div class="flex justify-center items-center">
-  <SharedAnchor
-    slot="Mas proyectos"
-    arialLabel="ver mas royectos"
-    href="/mas-proyectos"
-  />
-</div>
+  <div class="flex justify-center items-center">
+    <SharedAnchor
+      slot="Mas proyectos"
+      arialLabel="ver mas royectos"
+      href="/mas-proyectos"
+    />
+  </div>
+</section>
