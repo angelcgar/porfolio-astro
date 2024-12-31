@@ -19,7 +19,7 @@ import type { Proyectos } from '@/interfaces/experience.interface';
   <img
     src={project.imageHref}
     class="h-auto m-auto rounded-md w-72 lg:w-96 aspect-auto"
-    alt={`Imagen de mi proyecto ${project.name}`}
+    alt={`Image of my project - ${project.name}`}
   />
   <div
     class="inline-flex flex-wrap items-center justify-center h-8 my-1 ml-2 overflow-hidden text-xs"
@@ -40,7 +40,7 @@ import type { Proyectos } from '@/interfaces/experience.interface';
                 <img
                   src={tag}
                   class="flex-shrink-0 h-auto pt-1 pl-1 m-auto w-7 aspect-square"
-                  alt={`La habilidad que uso es ${imageName}`}
+                  alt={`The skill I used: ${imageName}`}
                 />
               </div>
               <span class="ml-1 text-black dark:text-white">{` ${imageName} `}</span>
@@ -52,7 +52,7 @@ import type { Proyectos } from '@/interfaces/experience.interface';
 
   <div class="pl-2">
     <h2 class="mx-auto my-4 text-2xl font-bold">{project.title}</h2>
-    <p>{project.body.pequeño}</p>
+    <p>{project.body.short}</p>
   </div>
 
   <div class="flex flex-col pl-2 lg:flex-row gap-x-3">
@@ -65,7 +65,7 @@ import type { Proyectos } from '@/interfaces/experience.interface';
         target="_blank"
         rel="noreferrer noopener"
         href={project.github}
-        ><GithubIcon class="mr-2 size-6" />Ver Repositorio</a
+        ><GithubIcon class="mr-2 size-6" />View Repository</a
       >
     </button>
     <button
@@ -76,20 +76,8 @@ import type { Proyectos } from '@/interfaces/experience.interface';
         class="flex flex-row items-center justify-center"
         target="_blank"
         rel="noreferrer noopener"
-        href={project.href}
-        ><ExternalLink class="mr-2 size-6" />Proyecto en vivo</a
+        href={project.href}><ExternalLink class="mr-2 size-6" />Live Project</a
       >
     </button>
-    <!-- <button
-      type="button"
-      class="p-2 mt-5 font-medium transition-colors bg-gray-200 rounded-md hover:bg-gray-300 dark:bg-sky-700 dark:hover:bg-sky-600 justify-evenly"
-    >
-      <a
-        class="flex flex-row items-center justify-center"
-        rel="noreferrer noopener"
-        href={`/projects/${project.id}`}
-        ><ExternalLink class="mr-2 size-6" />Proyecto en vivo</a
-      >
-    </button> -->
   </div>
 </div>

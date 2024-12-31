@@ -2,6 +2,8 @@
 import LinkendinIcon from '@/icons/LinkendinIcon.astro';
 import TwitterIcon from '@/icons/TwitterIcon.astro';
 import GithubIcon from '@/icons/GithubIcon.astro';
+
+const year = new Date().getFullYear();
 ---
 
 <footer class="flex gap-4 py-10 mt-4">
@@ -10,7 +12,7 @@ import GithubIcon from '@/icons/GithubIcon.astro';
   >
     <div>
       <p class="text-lg">
-        &copy; 2024. Desarrollado por <a
+        &copy; {year}. Developed with ❤️ by <a
           target="_blank"
           rel="norefer"
           href="https://x.com/AngelCo99356422"
@@ -26,7 +28,7 @@ import GithubIcon from '@/icons/GithubIcon.astro';
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/angelcgar"
-          aria-label="Sabar mas acerca del programador"
+          aria-label="Know more about the developer"
           ><GithubIcon
             class="size-9 hover:text-gray-800 dark:hover:text-ancg-400"
           /></a
@@ -35,7 +37,7 @@ import GithubIcon from '@/icons/GithubIcon.astro';
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.linkedin.com/in/angel-contreras-b45a66290/"
-          aria-label="Sabar mas acerca del programador"
+          aria-label="Know more about the developer"
           ><LinkendinIcon
             class="size-9 hover:text-gray-800 dark:hover:text-ancg-400"
           /></a
@@ -44,7 +46,7 @@ import GithubIcon from '@/icons/GithubIcon.astro';
           target="_blank"
           rel="noopener noreferrer"
           href="https://x.com/AngelCo99356422"
-          aria-label="Sabar mas acerca del programador"
+          aria-label="Know more about the developer"
           ><TwitterIcon
             class="size-9 hover:text-gray-800 dark:hover:text-ancg-400"
           /></a

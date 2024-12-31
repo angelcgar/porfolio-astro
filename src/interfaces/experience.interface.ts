@@ -17,6 +17,6 @@ export interface Proyectos {
 }
 
 interface Body {
-  pequeño: string;
-  largo: string;
+  short: string;
+  long: string;
 }
