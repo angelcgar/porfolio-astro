@@ -7,7 +7,7 @@ const curriculumVitaeUrl =
 ---
 
 <header
-  class="flex flex-col md:flex-row text-pretty md:text-left p-5 md:p-10 gap-3 rounded-md mb-11 mx-1 container"
+  class="container flex flex-col gap-3 p-5 mx-1 rounded-md md:flex-row text-pretty md:text-left md:p-10 mb-11"
 >
   <div class="flex-1">
     <Title class="pb-3"> Hey, soy ContrerasCode </Title>
@@ -20,7 +20,13 @@ const curriculumVitaeUrl =
       aplicar mis habilidades en el desarrollo de experiencias de usuario excepcionales.
     </p>
 
-    <div class="flex gap-1">
+    <div class="flex flex-wrap gap-1 md:gap-3">
+      <SharedAnchor
+        slot="GitHub"
+        arialLabel="ver mi seccion de GitHub"
+        href="https://github.com/angelcgar"
+        target="_blank"
+      />
       <SharedAnchor
         slot="Contactame"
         arialLabel="ver mi seccion de contacto"
@@ -38,6 +44,6 @@ const curriculumVitaeUrl =
   <img
     alt="un dibujo de angelcgar, el dibujo fue echo con IA"
     src="/img/avatar1.webp"
-    class="w-52 h-52 rounded-xl mx-auto mt-1 md:mt-5 object-cover lg:hdden aspect-auto"
+    class="object-cover mx-auto mt-1 w-52 h-52 rounded-xl md:mt-5 lg:hdden aspect-auto"
   />
 </header>

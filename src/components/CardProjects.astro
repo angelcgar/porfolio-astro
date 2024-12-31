@@ -22,15 +22,15 @@ import ExternalLink from '@/icons/ExternalLink.astro';
 ---
 
 <div
-  class="bg-ancg-950 p-5 rounded-xl hover:bg-ancg-900/40 hover:shadow-stone-100/30 hover:shadow-lg transition-all duration-300 ease-in-out"
+  class="p-5 transition-colors duration-300 ease-in-out bg-gray-100 dark:bg-ancg-950 rounded-xl dark:hover:bg-ancg-900/40 hover:bg-gray-200 hover:shadow-lg"
 >
   <img
     src={project.imageHref}
-    class="w-72 lg:w-96 h-auto m-auto rounded-md aspect-auto"
+    class="h-auto m-auto rounded-md w-72 lg:w-96 aspect-auto"
     alt={`Imagen de mi proyecto ${project.name}`}
   />
   <div
-    class="h-8 overflow-hidden inline-flex text-xs my-1 items-center flex-wrap justify-center ml-2"
+    class="inline-flex flex-wrap items-center justify-center h-8 my-1 ml-2 overflow-hidden text-xs"
   >
     {
       TAGS &&
@@ -40,17 +40,18 @@ import ExternalLink from '@/icons/ExternalLink.astro';
             .pop()!
             .replace('.svg', '')
             .replace('.webp', '');
+          console.log({ TAGS, imageName });
 
           return (
-            <div class="mt-1 mr-1 inline-block font-medium whitespace-nowrap rounded-full pr-2 pl-1 leading-5 text-teal-100 bg-ancg-900 items-center justify-center border-[1px] text-sm my-1 text-center flex-col content-center w-fit border-slate-500">
+            <div class="mt-1 mr-1 inline-block font-medium whitespace-nowrap rounded-full pr-2 pl-1 leading-5  text-teal-100 bg-white dark:bg-ancg-900 items-center justify-center border-[1px] text-sm my-1 text-center flex-col content-center w-fit border-slate-500">
               <div class="inline-flex size-[18px] items-center justify-start overflow-hidden">
                 <img
                   src={tag}
-                  class="w-7 h-auto pt-1 pl-1 aspect-square m-auto"
+                  class="flex-shrink-0 h-auto pt-1 pl-1 m-auto w-7 aspect-square"
                   alt={`La habilidad que uso es ${imageName}`}
                 />
               </div>
-              <span class="ml-1">{` ${imageName} `}</span>
+              <span class="ml-1 text-black dark:text-white">{` ${imageName} `}</span>
             </div>
           );
         })
@@ -58,17 +59,17 @@ import ExternalLink from '@/icons/ExternalLink.astro';
   </div>
 
   <div class="pl-2">
-    <h2 class="text-2xl font-bold my-4 mx-auto">{project.title}</h2>
+    <h2 class="mx-auto my-4 text-2xl font-bold">{project.title}</h2>
     <p>{project.body}</p>
   </div>
 
-  <div class="pl-2 flex lg:flex-row flex-col gap-x-3">
+  <div class="flex flex-col pl-2 lg:flex-row gap-x-3">
     <button
       type="button"
-      class="bg-sky-700 hover:bg-sky-600 p-2 mt-5 justify-evenly rounded-md font-medium"
+      class="p-2 mt-5 font-medium transition-colors bg-gray-200 rounded-md hover:bg-gray-300 dark:bg-sky-700 dark:hover:bg-sky-600 justify-evenly"
     >
       <a
-        class="flex flex-row justify-center items-center"
+        class="flex flex-row items-center justify-center"
         target="_blank"
         rel="noreferrer noopener"
         href={project.github}
@@ -77,10 +78,10 @@ import ExternalLink from '@/icons/ExternalLink.astro';
     </button>
     <button
       type="button"
-      class="bg-sky-700 hover:bg-sky-600 p-2 mt-5 justify-evenly rounded-md font-medium"
+      class="p-2 mt-5 font-medium transition-colors bg-gray-200 rounded-md hover:bg-gray-300 dark:bg-sky-700 dark:hover:bg-sky-600 justify-evenly"
     >
       <a
-        class="flex flex-row justify-center items-center"
+        class="flex flex-row items-center justify-center"
         target="_blank"
         rel="noreferrer noopener"
         href={project.href}

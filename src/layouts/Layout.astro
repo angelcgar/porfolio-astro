@@ -21,19 +21,31 @@ const { title, descrition } = Astro.props;
     <ViewTransitions />
   </head>
 
-  <body class="bg-slate-100 dark:bg-slate-900 dark:text-white">
-    <main class="mx-auto md:pt-7 container">
+  <div
+    class="dark:fixed dark:top-0 dark:z-[-2] dark:h-screen dark:w-screen dark:bg-neutral-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+  >
+  </div>
+
+  <!-- todo: poner un fondo -->
+  <body class="bg-slate-100 dark:bg-slate-950 dark:text-white">
+    <main class="container mx-auto md:pt-7">
       <slot />
     </main>
     <Footer />
-    <style is:global>
-      :root {
-        color-scheme: dark light;
-      }
-
-      html {
-        font-family: system-ui, sans-serif;
-      }
-    </style>
   </body>
+
+  <style is:global>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+      }
+    }
+    /* :root {
+    color-scheme: dark light;
+  } */
+
+    html {
+      font-family: system-ui, sans-serif;
+    }
+  </style>
 </html>
