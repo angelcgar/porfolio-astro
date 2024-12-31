@@ -8,14 +8,22 @@ import SharedAnchor from './SharedAnchor.astro';
 import Title from './Title.astro';
 ---
 
-<section class="p-5 md:p-10 rounded-md my-4 mx-1 container">
+<section class="container p-5 mx-1 my-4 rounded-md md:p-10">
   <Title class=""> Mis proyectos </Title>
 
-  <div class="grid md:grid-cols-2 gap-6 mt-10">
-    {projects.map((project) => <CardProjects project={project} />)}
+  <div class="grid gap-6 mt-10 md:grid-cols-2">
+    {
+      projects.map((project) => (
+        <div>
+          <a href={`/projects/${project.id}`}>
+            <CardProjects project={project} />
+          </a>
+        </div>
+      ))
+    }
   </div>
 
-  <div class="flex justify-center items-center">
+  <div class="flex items-center justify-center">
     <SharedAnchor
       slot="Mas proyectos"
       arialLabel="ver mas royectos"

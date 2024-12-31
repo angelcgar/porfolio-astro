@@ -7,6 +7,7 @@ interface Proyectos {
   imageHref: string;
   github: string;
   tags: string[];
+  id: number;
 }
 
 interface Props {
@@ -40,7 +41,7 @@ import ExternalLink from '@/icons/ExternalLink.astro';
             .pop()!
             .replace('.svg', '')
             .replace('.webp', '');
-          console.log({ TAGS, imageName });
+          // console.log({ TAGS, imageName });
 
           return (
             <div class="mt-1 mr-1 inline-block font-medium whitespace-nowrap rounded-full pr-2 pl-1 leading-5  text-teal-100 bg-white dark:bg-ancg-900 items-center justify-center border-[1px] text-sm my-1 text-center flex-col content-center w-fit border-slate-500">
@@ -88,5 +89,16 @@ import ExternalLink from '@/icons/ExternalLink.astro';
         ><ExternalLink class="mr-2 size-6" />Proyecto en vivo</a
       >
     </button>
+    <!-- <button
+      type="button"
+      class="p-2 mt-5 font-medium transition-colors bg-gray-200 rounded-md hover:bg-gray-300 dark:bg-sky-700 dark:hover:bg-sky-600 justify-evenly"
+    >
+      <a
+        class="flex flex-row items-center justify-center"
+        rel="noreferrer noopener"
+        href={`/projects/${project.id}`}
+        ><ExternalLink class="mr-2 size-6" />Proyecto en vivo</a
+      >
+    </button> -->
   </div>
 </div>

@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "mario bros",
     "title": "Super Mario Bros",
     "body": "Este es un clon del famoso juego Super Mario Bros, hecho con solo TypeScript",
@@ -13,6 +14,7 @@
     ]
   },
   {
+    "id": 2,
     "name": "Lista de Tareas",
     "title": "Mi Lista de Tareas",
     "body": "Este es mi Lista de Tareas que fue hecho con solo TypeScript.",
@@ -26,6 +28,7 @@
     ]
   },
   {
+    "id": 3,
     "name": "Documentación",
     "title": "Documentacion",
     "body": "Aplicacion Full stack, que se sirve muy rápido y consume una API que yo mismo he programado",
@@ -39,6 +42,7 @@
     ]
   },
   {
+    "id": 4,
     "name": "Candy crush",
     "title": "Candy crush",
     "body": "En este proyecto, yo realice un juego con javascript puro, además de que es muy entretenido",

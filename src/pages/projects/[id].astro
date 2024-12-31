@@ -1,0 +1,35 @@
+---
+import projects from '@/data/projects.json';
+
+import Layout from '@/layouts/Layout.astro';
+import type { GetStaticPaths } from 'astro';
+
+const { id } = Astro.params;
+
+let project = projects.find((project) => project.id === parseInt(id));
+
+export const getStaticPaths = (() => {
+  const paths = projects.map((project) => ({
+    params: { id: project.id.toString() },
+  }));
+
+  return paths;
+
+  // return [{ params: { id: '1' } }];
+}) satisfies GetStaticPaths;
+---
+
+<Layout descrition="Project" title="Project">
+  <div class="container flex flex-row gap-3 p-3 m-3">
+    <article class="flex flex-col items-center justify-center">
+      <h1>Project {id}</h1>
+      <img
+        src={project?.imageHref}
+        class="h-auto m-auto rounded-md w-72 lg:w-96 aspect-auto"
+        alt={`Imagen de mi proyecto ${project?.name}`}
+      />
+    </article>
+    <p class="text-center">{project?.body}</p>
+  </div>
+  <!-- <pre>{JSON.stringify(project,null, 5)}</pre> -->
+</Layout>
