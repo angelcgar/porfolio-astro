@@ -5,7 +5,7 @@ import Layout from '@/layouts/Layout.astro';
 import CardProjects from '@/components/CardProjects.astro';
 
 // Config mas-projects.json
-import projects from '@/data/mas-projects.json';
+import projects from '@/data/projects.json';
 import Title from '../Title.astro';
 ---
 
@@ -17,7 +17,15 @@ import Title from '../Title.astro';
       <Title> Mas proyectos personales </Title>
 
       <div class="grid md:grid-cols-2 gap-6 mt-10">
-        {projects.map((project) => <CardProjects project={project} />)}
+        {
+          projects.slice(4).map((project) => (
+            <div>
+              <a href={`/projects/${project.id}`} class="cursor-pointer">
+                <CardProjects project={project} />
+              </a>
+            </div>
+          ))
+        }
       </div>
     </section>
   </div>

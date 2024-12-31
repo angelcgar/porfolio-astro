@@ -1,15 +1,4 @@
 ---
-interface Proyectos {
-  name: string;
-  title: string;
-  body: string;
-  href: string;
-  imageHref: string;
-  github: string;
-  tags: string[];
-  id: number;
-}
-
 interface Props {
   project: Proyectos;
 }
@@ -20,6 +9,8 @@ const TAGS = project.tags;
 
 import GithubIcon from '@/icons/GithubIcon.astro';
 import ExternalLink from '@/icons/ExternalLink.astro';
+
+import type { Proyectos } from '@/interfaces/experience.interface';
 ---
 
 <div
@@ -61,7 +52,7 @@ import ExternalLink from '@/icons/ExternalLink.astro';
 
   <div class="pl-2">
     <h2 class="mx-auto my-4 text-2xl font-bold">{project.title}</h2>
-    <p>{project.body}</p>
+    <p>{project.body.pequeño}</p>
   </div>
 
   <div class="flex flex-col pl-2 lg:flex-row gap-x-3">

@@ -3,7 +3,10 @@
     "id": 1,
     "name": "mario bros",
     "title": "Super Mario Bros",
-    "body": "Este es un clon del famoso juego Super Mario Bros, hecho con solo TypeScript",
+    "body": {
+      "pequeño": "Este es un clon del famoso juego Super Mario Bros, hecho con solo TypeScript",
+      "largo": "Este es un clon del famoso juego Super Mario Bros, hecho con solo TypeScript, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo."
+    },
     "href": "https://visionary-mermaid-bdab86.netlify.app/",
     "imageHref": "/img/marioBrosTs.webp",
     "github": "https://github.com/angelcgar/mario-bros-ts",
@@ -17,7 +20,10 @@
     "id": 2,
     "name": "Lista de Tareas",
     "title": "Mi Lista de Tareas",
-    "body": "Este es mi Lista de Tareas que fue hecho con solo TypeScript.",
+    "body": {
+      "pequeño": "Este es mi Lista de Tareas que fue hecho con React y html.",
+      "largo": "Este es mi Lista de Tareas que fue hecho con React, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo."
+    },
     "href": "https://spiffy-cascaron-6bc6ed.netlify.app/",
     "imageHref": "/img/listaTareas.webp",
     "github": "https://github.com/angelcgar/TSTodoList",
@@ -31,7 +37,10 @@
     "id": 3,
     "name": "Documentación",
     "title": "Documentacion",
-    "body": "Aplicacion Full stack, que se sirve muy rápido y consume una API que yo mismo he programado",
+    "body": {
+      "pequeño": "Este es un proyecto de documentación de Java, en donde se puede ver la documentación de Java.",
+      "largo": "Este es un proyecto de documentación de Java, en donde se puede ver la documentación de Java, además de que es muy entretenido, y se puede jugar en cualquier dispositivo."
+    },
     "href": "https://documentacion-java.vercel.app/",
     "imageHref": "/img/documentacion.webp",
     "github": "https://github.com/angelcgar/documentacion-java",
@@ -45,7 +54,10 @@
     "id": 4,
     "name": "Candy crush",
     "title": "Candy crush",
-    "body": "En este proyecto, yo realice un juego con javascript puro, además de que es muy entretenido",
+    "body": {
+      "pequeño": "Este es un clon del famoso juego Candy Crush, hecho con solo JavaScript",
+      "largo": "Este es un clon del famoso juego Candy Crush, hecho con solo JavaScript, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo."
+    },
     "href": "https://candy-crush-es.vercel.app/",
     "imageHref": "/img/candyCrush.webp",
     "github": "https://github.com/angelcgar/candy-crush-es",
@@ -53,6 +65,92 @@
       "/svg/ViteJs.svg",
       "/svg/JavaScript.svg",
       "/svg/CSS.svg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Juego de Snake",
+    "title": "Mi Juego de Snake",
+    "body": {
+      "pequeño": "Este es mi juego de Snake, uno de mis primeros proyectos en NextJs",
+      "largo": "Este es mi juego de Snake, uno de mis primeros proyectos en NextJs, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo."
+    },
+    "href": "https://65946ac2adc6ff0a49bef6c8--cheerful-tulumba-6526bc.netlify.app/",
+    "imageHref": "/img/snake.webp",
+    "github": "https://github.com/angelcgar/snake",
+    "tags": [
+      "/svg/NextJs.svg",
+      "/svg/React.svg",
+      "/svg/CSS.svg"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Buscador de peliculas",
+    "title": "Buscador de peliculas",
+    "body": {
+      "pequeño": "Este es un buscador de peliculas, hecho con React y html",
+      "largo": "Este es un buscador de peliculas, hecho con React, en donde se puede buscar peliculas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo."
+    },
+    "href": "https://joyful-cannoli-81bf1e.netlify.app/",
+    "imageHref": "/img/peliculas.webp",
+    "github": "https://github.com/angelcgar/aprendiendo-react/tree/main/projects/05-react-buscador-peliculas",
+    "tags": [
+      "/svg/ViteJs.svg",
+      "/svg/React.svg",
+      "/svg/HTML.svg",
+      "/svg/CSS.svg"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Lista de Tareas",
+    "title": "Mi Lista de Tareas",
+    "body": {
+      "pequeño": "Este es mi Lista de Tareas que fue hecho con React y LocalStorage",
+      "largo": "Este es mi Lista de Tareas que fue hecho con React y LocalStorage, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo."
+    },
+    "href": "https://faztweb.github.io/react-tasksapp-localstorage/",
+    "imageHref": "/img/listaDeTareas.webp",
+    "github": "https://faztweb.github.io/react-tasksapp-localstorage/",
+    "tags": [
+      "/svg/ViteJs.svg",
+      "/svg/React.svg",
+      "/svg/HTML.svg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Pokedex",
+    "title": "Mi Pokedex",
+    "body": {
+      "pequeño": "Este es mi Pokedex, uno de mis primeros proyectos en React",
+      "largo": "Este es mi Pokedex, uno de mis primeros proyectos en React, en donde se puede buscar pokemones, además de que es muy entretenido, y se puede jugar en cualquier dispositivo."
+    },
+    "href": "https://flourishing-kataifi-ea0631.netlify.app/",
+    "imageHref": "/img/pokedex.webp",
+    "github": "https://github.com/angelcgar/pokedex",
+    "tags": [
+      "/svg/CSS.svg",
+      "/svg/React.svg",
+      "/svg/HTML.svg"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "calculadora",
+    "title": "Mi Calculadora",
+    "body": {
+      "pequeño": "Este es mi Calculadora, uno de mis primeros proyectos en React",
+      "largo": "Este es mi Calculadora, uno de mis primeros proyectos en React, en donde se puede hacer operaciones matematicas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo."
+    },
+    "href": "https://amazing-queijadas-ba02d4.netlify.app/",
+    "imageHref": "/img/calculadora.webp",
+    "github": "https://github.com/angelcgar/calculadora-react",
+    "tags": [
+      "/svg/ViteJs.svg",
+      "/svg/React.svg",
+      "/svg/JavaScript.svg"
     ]
   }
 ]
