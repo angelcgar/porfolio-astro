@@ -4,6 +4,7 @@ import CardProjects from '@/components/CardProjects.astro';
 import SharedAnchor from '@/components/SharedAnchor.astro';
 import Title from '@/components/Title.astro';
 
+// api
 import type { Proyectos } from '@/pages/api/proyectos.json';
 import { envs } from '@/config/envs';
 
@@ -34,7 +35,7 @@ if (projectsByImportance['!!4']) {
   allProject = [...allProject, ...projectsByImportance['!!4']];
 }
 
-console.log({ allProject });
+// console.log({ allProject });
 ---
 
 <section class="container p-5 mx-1 my-4 rounded-md md:p-10">
@@ -42,7 +43,7 @@ console.log({ allProject });
 
   <div class="grid gap-6 mt-10 md:grid-cols-2">
     {
-      allProject.slice(0, 4).map((project) => (
+      allProject.map((project) => (
         <div>
           <a href={`/projects/${project.id}`}>
             <CardProjects project={project} />
