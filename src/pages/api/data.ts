@@ -1,8 +1,7 @@
+import { proyectos } from "./proyectos.json";
+
 export async function GET() {
-  return new Response(
-    JSON.stringify({ message: "Hola, este es tu JSON desde Astro!" }),
-    {
-      headers: { "Content-Type": "application/json" },
-    }
-  );
+  return new Response(JSON.stringify(proyectos), {
+    headers: { "Content-Type": "application/json" },
+  });
 }
