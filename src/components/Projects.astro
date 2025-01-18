@@ -5,7 +5,7 @@ import SharedAnchor from '@/components/SharedAnchor.astro';
 import Title from '@/components/Title.astro';
 
 // api
-import type { Proyectos } from '@/pages/api/proyectos.json';
+import type { Proyectos } from '@/pages/api/proyectos-json';
 import { envs } from '@/config/envs';
 
 const data = await fetch(`${envs.PATH_ROOT_URL}/api/data`);
