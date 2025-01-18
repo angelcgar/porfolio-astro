@@ -1,11 +1,40 @@
 ---
-// config projects.json
-import projects from '@/data/projects.json';
-
 // Componente
 import CardProjects from '@/components/CardProjects.astro';
-import SharedAnchor from './SharedAnchor.astro';
-import Title from './Title.astro';
+import SharedAnchor from '@/components/SharedAnchor.astro';
+import Title from '@/components/Title.astro';
+
+import type { Proyectos } from '@/pages/api/proyectos.json';
+import { envs } from '@/config/envs';
+
+const data = await fetch(`${envs.PATH_ROOT_URL}/api/data`);
+const res: Proyectos[] = await data.json();
+const filteredProjects = res.filter(
+  (p) => p.category === envs.PROJECT_CATEGORY
+);
+const selectedProjects = filteredProjects.slice(0, 4);
+
+const projectsByImportance = Object.groupBy(
+  selectedProjects,
+  ({ prioridad }) => prioridad!
+);
+
+let allProject: Proyectos[] = [];
+
+if (projectsByImportance['!!1']) {
+  allProject = [...allProject, ...projectsByImportance['!!1']];
+}
+if (projectsByImportance['!!2']) {
+  allProject = [...allProject, ...projectsByImportance['!!2']];
+}
+if (projectsByImportance['!!3']) {
+  allProject = [...allProject, ...projectsByImportance['!!3']];
+}
+if (projectsByImportance['!!4']) {
+  allProject = [...allProject, ...projectsByImportance['!!4']];
+}
+
+console.log({ allProject });
 ---
 
 <section class="container p-5 mx-1 my-4 rounded-md md:p-10">
@@ -13,7 +42,7 @@ import Title from './Title.astro';
 
   <div class="grid gap-6 mt-10 md:grid-cols-2">
     {
-      projects.slice(0, 4).map((project) => (
+      allProject.slice(0, 4).map((project) => (
         <div>
           <a href={`/projects/${project.id}`}>
             <CardProjects project={project} />
