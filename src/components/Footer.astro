@@ -1,9 +1,24 @@
 ---
+interface Props {
+  lang: 'en' | 'es';
+}
+
 import LinkendinIcon from '@/icons/LinkendinIcon.astro';
 import TwitterIcon from '@/icons/TwitterIcon.astro';
 import GithubIcon from '@/icons/GithubIcon.astro';
 
 const year = new Date().getFullYear();
+
+const text = {
+  en: {
+    developed: 'Developed with ❤️ by',
+  },
+  es: {
+    developed: 'Desarrollado con ❤️ por',
+  },
+};
+
+const { lang } = Astro.props;
 ---
 
 <footer class="flex gap-4 py-10 mt-4">
@@ -12,9 +27,10 @@ const year = new Date().getFullYear();
   >
     <div>
       <p class="text-lg">
-        &copy; {year}. Developed with ❤️ by <a
+        &copy; {year}. {text[lang].developed}
+        <a
           target="_blank"
-          rel="norefer"
+          rel="noopener noreferrer"
           href="https://x.com/AngelCo99356422"
           class="hover:text-gray-900 dark:hover:text-ancg-400">@angelcgar</a
         >
@@ -36,7 +52,7 @@ const year = new Date().getFullYear();
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/angel-contreras-b45a66290/"
+          href="https://www.linkedin.com/in/angel-contreras-garcia-b45a66290/"
           aria-label="Know more about the developer"
           ><LinkendinIcon
             class="size-9 hover:text-gray-800 dark:hover:text-ancg-400"

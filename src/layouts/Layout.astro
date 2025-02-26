@@ -8,10 +8,11 @@ import '@/styles/css-reset-2024.css';
 
 interface Props {
   title: string;
-  descrition: string;
+  description: string;
+  lang: 'en' | 'es';
 }
 
-const { title, descrition } = Astro.props;
+const { title, description: descrition, lang } = Astro.props;
 ---
 
 <!doctype html>
@@ -31,7 +32,7 @@ const { title, descrition } = Astro.props;
     <main class="container mx-auto md:pt-7">
       <slot />
     </main>
-    <Footer />
+    <Footer lang={lang} />
   </body>
 
   <style is:global>

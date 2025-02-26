@@ -4,9 +4,19 @@ interface Props {
   description: string;
   link: string;
   date: string;
+  lang: 'en' | 'es';
 }
 
-const { title, description, link, date } = Astro.props;
+const text = {
+  en: {
+    button_content: 'Learn more...',
+  },
+  es: {
+    button_content: 'Saber más...',
+  },
+};
+
+const { title, description, link, date, lang } = Astro.props;
 ---
 
 <div
@@ -28,5 +38,5 @@ const { title, description, link, date } = Astro.props;
   href={link}
   class="inline-flex items-center justify-center px-2 py-1 text-xs transition border border-gray-300 rounded-full bg-white/5 dark:border-white/10 gap-x-2 md:py-2 md:px-4 md:text-base hover:scale-110 hover:bg-white/10"
 >
-  Learn more...
+  {text[lang].button_content}
 </a>

@@ -1,34 +1,72 @@
 ---
+interface Props {
+  lang: 'en' | 'es';
+}
+
 import ExperienceItem from '@/components/ExperienceItem.astro';
 
 import type { experience } from '@/interfaces';
 import Title from './Title.astro';
 
-const EXPERIENCIE: experience[] = [
-  {
-    date: 'Currently...',
-    title: 'Self-taught Learning and Skill Development',
-    description:
-      'I am a self-taught learner passionate about technology. I dedicate my time to learning from various sources, such as online courses on platforms like Udemy and Coursera, books by renowned authors like Robert Martin and Eric S. Raymond, YouTube tutorials, and specialized blogs on different programming languages. I enjoy exploring new technologies and understanding how they work, such as blockchain, artificial intelligence, and the Internet of Things.',
-    link: 'https://github.com/angelcgar',
+const text = {
+  en: {
+    title: 'Work Experience',
+    content: [
+      {
+        date: 'Currently...',
+        title: 'Self-taught Learning and Skill Development',
+        description:
+          'I am a self-taught learner passionate about technology. I dedicate my time to learning from various sources, such as online courses on platforms like Udemy and Coursera, books by renowned authors like Robert Martin and Eric S. Raymond, YouTube tutorials, and specialized blogs on different programming languages. I enjoy exploring new technologies and understanding how they work, such as blockchain, artificial intelligence, and the Internet of Things.',
+        link: 'https://github.com/angelcgar',
+      },
+      {
+        date: 'September 2022',
+        title:
+          'Web Developer - Website Deployment on Various Hosting Platforms',
+        description:
+          'I developed and deployed over 10 websites on different hosting platforms, including Hostinger, GoDaddy, and AWS Amplify. I accomplished this within just three weeks after starting my career as a web developer, showcasing my ability to: Learn quickly Read and understand code Analyze problems Make favorable decisions',
+        link: 'https://github.com/angelcgar',
+      },
+    ],
   },
-  {
-    date: 'September 2022',
-    title: 'Web Developer - Website Deployment on Various Hosting Platforms',
-    description:
-      'I developed and deployed over 10 websites on different hosting platforms, including Hostinger, GoDaddy, and AWS Amplify. I accomplished this within just three weeks after starting my career as a web developer, showcasing my ability to: Learn quickly Read and understand code Analyze problems Make favorable decisions',
-    link: 'https://github.com/angelcgar',
+  es: {
+    title: 'Experiencia Laboral',
+    content: [
+      {
+        date: 'Actualmente...',
+        title: 'Aprendizaje autodidacta y desarrollo de habilidades',
+        description:
+          'Soy un aprendiz autodidacta apasionado por la tecnología. Dedico mi tiempo a aprender de diversas fuentes, como cursos en línea en plataformas como Udemy y Coursera, libros de autores reconocidos como Robert Martin y Eric S. Raymond, tutoriales de YouTube y blogs especializados en diferentes lenguajes de programación. Disfruto explorando nuevas tecnologías y comprendiendo cómo funcionan, como blockchain, inteligencia artificial y el Internet de las cosas.',
+        link: 'https://github.com/angelcgar',
+      },
+      {
+        date: 'Septiembre 2022',
+        title:
+          'Desarrollador Web - Despliegue de sitios web en diversas plataformas de alojamiento',
+        description:
+          'Desarrollé y desplegué más de 10 sitios web en diferentes plataformas de alojamiento, incluidas Hostinger, GoDaddy y AWS Amplify. Logré esto en solo tres semanas después de comenzar mi carrera como desarrollador web, demostrando mi capacidad para: Aprender rápidamente Leer y comprender código Analizar problemas Tomar decisiones favorables',
+        link: 'https://github.com/angelcgar',
+      },
+    ],
   },
-];
+};
+
+const { lang } = Astro.props;
 ---
 
 <section class="p-5 md:p-10 rounded-md my-4 mx-1 container">
-  <Title class="pb-3"> Work Experience </Title>
+  <Title class="pb-3"> {text[lang].title} </Title>
   <ol class="relative border-s border-gray-200 ml-3">
     {
-      EXPERIENCIE.map((experiencie) => (
+      text[lang].content.map(({ date, description, link, title }) => (
         <li class="m-4 ms-4 p-4">
-          <ExperienceItem {...experiencie} />
+          <ExperienceItem
+            title={title}
+            link={link}
+            description={description}
+            date={date}
+            lang={lang}
+          />
         </li>
       ))
     }

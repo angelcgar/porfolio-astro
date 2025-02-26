@@ -1,4 +1,8 @@
 ---
+interface Props {
+  lang: 'en' | 'es';
+}
+
 // Componente
 import CardProjects from '@/components/CardProjects.astro';
 import SharedAnchor from '@/components/SharedAnchor.astro';
@@ -35,18 +39,29 @@ if (projectsByImportance['!!4']) {
   allProject = [...allProject, ...projectsByImportance['!!4']];
 }
 
+const text = {
+  en: {
+    title: 'My projects',
+    button_content: 'More projects',
+  },
+  es: {
+    title: 'Mis proyectos',
+    button_content: 'Más proyectos',
+  },
+};
 // console.log({ allProject });
+const { lang } = Astro.props;
 ---
 
 <section class="container p-5 mx-1 my-4 rounded-md md:p-10">
-  <Title class=""> My projects </Title>
+  <Title class=""> {text[lang].title} </Title>
 
   <div class="grid gap-6 mt-10 md:grid-cols-2">
     {
       allProject.map((project) => (
         <div>
           <a href={`/projects/${project.id}`}>
-            <CardProjects project={project} />
+            <CardProjects project={project} lang={lang} />
           </a>
         </div>
       ))
@@ -55,7 +70,7 @@ if (projectsByImportance['!!4']) {
 
   <div class="flex items-center justify-center">
     <SharedAnchor
-      slot="More projects"
+      slot={text[lang].button_content}
       arialLabel="view more projects"
       href="/mas-proyectos"
     />

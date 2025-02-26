@@ -1,5 +1,10 @@
 ---
-import App from '@/components/pages/App.astro';
----
+const userLang = Astro.request.headers
+  .get('accept-language')
+  ?.split(',')[0]
+  .startsWith('es')
+  ? '/es/'
+  : '/en/';
 
-<App />
+return Astro.redirect(userLang);
+---

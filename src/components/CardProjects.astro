@@ -1,10 +1,21 @@
 ---
 interface Props {
   project: Proyectos;
+  lang: 'en' | 'es';
 }
 
-const { project } = Astro.props;
+const text = {
+  en: {
+    button_content_github: 'View Repository',
+    button_content_live: 'Live Project',
+  },
+  es: {
+    button_content_github: 'Ver Repositorio',
+    button_content_live: 'Proyecto en Vivo',
+  },
+};
 
+const { project, lang } = Astro.props;
 const TAGS = project.tags;
 
 import GithubIcon from '@/icons/GithubIcon.astro';
@@ -65,8 +76,8 @@ import type { Proyectos } from '@/interfaces/experience.interface';
         target="_blank"
         rel="noreferrer noopener"
         href={project.github}
-        ><GithubIcon class="mr-2 size-6" />View Repository</a
-      >
+        ><GithubIcon class="mr-2 size-6" /> {text[lang].button_content_github}
+      </a>
     </button>
     <button
       type="button"
@@ -76,8 +87,9 @@ import type { Proyectos } from '@/interfaces/experience.interface';
         class="flex flex-row items-center justify-center"
         target="_blank"
         rel="noreferrer noopener"
-        href={project.href}><ExternalLink class="mr-2 size-6" />Live Project</a
-      >
+        href={project.href}
+        ><ExternalLink class="mr-2 size-6" /> {text[lang].button_content_live}
+      </a>
     </button>
   </div>
 </div>

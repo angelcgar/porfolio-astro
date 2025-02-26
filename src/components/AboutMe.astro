@@ -1,28 +1,81 @@
+---
+interface Props {
+  lang: 'en' | 'es';
+}
+
+const text = {
+  en: {
+    title: 'About me',
+    description:
+      'Hello, my name is Angel Contreras Garcia. I am a Front-End Web Developer who started by creating simple games and experimenting with different programming languages like',
+    description_skill_javascript: 'JavaScript',
+    description_skill_python: 'Python',
+    description_skill_html: 'HTML',
+    description_skill_css: 'CSS',
+    description_skill_react: 'React',
+    description_skill_angular: 'Angular',
+    description2:
+      'My passion for logical challenges and the satisfaction of solving problems drove me to explore the vast universe of computer science.',
+    description3: 'I have acquired skills in web languages such as',
+    description4: 'and I am familiar with frameworks like',
+    description5:
+      'My constant curiosity motivates me to keep learning and growing in this field.',
+    description_helper_and: 'and',
+  },
+  es: {
+    title: 'Sobre mi',
+    description:
+      'Hola, mi nombre es Angel Contreras Garcia. Soy un Desarrollador Web Front-End que comenzó creando juegos simples y experimentando con diferentes lenguajes de programación como',
+    description_skill_javascript: 'JavaScript',
+    description_skill_python: 'Python',
+    description_skill_html: 'HTML',
+    description_skill_css: 'CSS',
+    description_skill_react: 'React',
+    description_skill_angular: 'Angular',
+    description2:
+      'Mi pasión por los desafíos lógicos y la satisfacción de resolver problemas me impulsaron a explorar el vasto universo de la informática.',
+    description3: 'He adquirido habilidades en lenguajes web como',
+    description4: 'estoy familiarizado con frameworks como',
+    description5:
+      'Mi constante curiosidad me motiva a seguir aprendiendo y creciendo en este campo.',
+    description_helper_and: 'y',
+  },
+};
+
+const { lang } = Astro.props;
+---
+
 <header
   class="container flex flex-col gap-3 p-5 mx-1 mt-10 rounded-md md:flex-row text-pretty md:text-left md:p-10 mb-11"
 >
   <div class="flex-1">
-    <h1 class="pb-3 text-2xl font-bold md:text-3xl">About Me</h1>
+    <h1 class="pb-3 text-2xl font-bold md:text-3xl">{text[lang].title}</h1>
 
     <div
       class="text-base md:text-lg max-w-[700px] pb-3 dark:[&>p>strong]:text-yellow-300 [&>p]:mb-4"
     >
       <p>
-        Hello, my name is Angel Contreras Garcia. I'm a Front-End Web Developer
-        who started by creating simple games and experimenting with different
-        programming languages like
-        <strong>JavaScript</strong> and <strong>Python</strong>.
+        {text[lang].description}
+        <strong>{text[lang].description_skill_javascript} </strong>
+
+        {text[lang].description_helper_and}
+        <strong>{text[lang].description_skill_python}</strong>
       </p>
       <p>
-        My passion for logical challenges and the satisfaction of solving
-        problems drove me to explore the vast universe of computer science.
+        {text[lang].description2}
       </p>
       <p>
-        I have acquired skills in web languages such as <strong>HTML</strong>,
-        <strong>CSS</strong>, and <strong>JavaScript</strong>, and I am familiar
-        with frameworks like <strong>React</strong> and <strong>Angular</strong
-        >. My constant curiosity motivates me to keep learning and growing in
-        this field.
+        {text[lang].description3}
+        <strong> {text[lang].description_skill_html} </strong>, <strong>
+          {text[lang].description_skill_css}
+        </strong>
+        {text[lang].description_helper_and}
+        <strong> {text[lang].description_skill_javascript}</strong>,
+        {text[lang].description4}
+        <strong> {text[lang].description_skill_react} </strong>
+        {text[lang].description_helper_and}
+        <strong> {text[lang].description_skill_angular}.</strong>
+        {text[lang].description5}
       </p>
     </div>
   </div>

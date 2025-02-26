@@ -1,39 +1,65 @@
 ---
+interface Props {
+  lang: 'en' | 'es';
+}
+
 import SharedAnchor from './SharedAnchor.astro';
 import Title from './Title.astro';
 
 const curriculumVitaeUrl =
   'https://drive.google.com/file/d/175lZD9TAQzWimmRf9Kca5zqboccSJ28b/view?usp=sharing';
+
+const { lang } = Astro.props;
+
+const text = {
+  en: {
+    title: 'Hey, I am ContrerasCode',
+    description:
+      'A Front-End Web Developer with experience in HTML5, CSS3, JavaScript, Git y GitHub.',
+    description_skills: 'HTML5, CSS3, JavaScript, Git y GitHub.',
+    description2:
+      'Proficient in ES6+ and familiar with UNIX systems. I am passionate about creating exceptional user experiences through my skills.',
+    buttons_names: ['GitHub', 'Contact me', 'More about me'],
+  },
+  es: {
+    title: 'Hola, soy ContrerasCode',
+    description:
+      'Un Desarrollador Web Front-End con experiencia en HTML5, CSS3, JavaScript, Git y GitHub.',
+    description_skills: 'HTML5, CSS3, JavaScript, Git y GitHub.',
+    description2:
+      'Proficiente en ES6+ y familiarizado con sistemas UNIX. Me apasiona crear experiencias de usuario excepcionales a través de mis habilidades.',
+    buttons_names: ['GitHub', 'Contácteme', 'Más sobre mí'],
+  },
+};
 ---
 
 <header
   class="container flex flex-col gap-3 p-5 mx-1 rounded-md md:flex-row text-pretty md:text-left md:p-10 mb-11"
 >
   <div class="flex-1">
-    <Title class="pb-3"> Hey, I'm ContrerasCode </Title>
+    <Title class="pb-3"> {text[lang].title} </Title>
     <p class="text-base md:text-lg max-w-[700px] pb-3">
-      A Front-End Web Developer with experience in <strong
-        class="dark:text-yellow-300"
-        >HTML5, CSS3, JavaScript, Git y GitHub.</strong
+      {text[lang].description}
+      <strong class="dark:text-yellow-300"
+        >{text[lang].description_skills}</strong
       >
-      Proficient in ES6+ and familiar with UNIX systems. I am passionate about creating
-      exceptional user experiences through my skills.
+      {text[lang].description2}
     </p>
 
     <div class="flex flex-wrap gap-1 md:gap-3">
       <SharedAnchor
-        slot="GitHub"
+        slot={text[lang].buttons_names[0]}
         arialLabel="view my github profile"
         href="https://github.com/angelcgar"
         target="_blank"
       />
       <SharedAnchor
-        slot="Contact me"
+        slot={text[lang].buttons_names[1]}
         arialLabel="view my contact information"
         href="/contacto"
       />
       <SharedAnchor
-        slot="More about me"
+        slot={text[lang].buttons_names[2]}
         arialLabel="get to know me better"
         href={curriculumVitaeUrl}
         target="_blank"
@@ -44,6 +70,6 @@ const curriculumVitaeUrl =
   <img
     alt="Avatar of ContrerasCode"
     src="/img/avatar1.webp"
-    class="object-cover mx-auto mt-1 w-52 h-52 rounded-xl md:mt-5 lg:hdden aspect-auto"
+    class="object-cover mx-auto mt-1 w-52 h-52 rounded-xl md:mt-5 aspect-auto"
   />
 </header>
