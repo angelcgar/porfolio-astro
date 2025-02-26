@@ -1,4 +1,6 @@
 ---
+export const prerender = true;
+
 import projects from '@/data/projects.json';
 
 import Layout from '@/layouts/Layout.astro';
@@ -10,7 +12,7 @@ let project = projects.find((project) => project.id === parseInt(id));
 
 export const getStaticPaths = (() => {
   const paths = projects.map((project) => ({
-    params: { id: project.id.toString() },
+    params: { id: project.id.toString(), tag: project.tags.toString() },
   }));
 
   return paths;
@@ -20,6 +22,9 @@ export const getStaticPaths = (() => {
 
 // todo: add lang support
 const lang = 'es';
+
+const viewTransitionName = `project-img-${project?.id}`;
+// console.log('project page', viewTransitionName);
 ---
 
 <Layout description="Project" title="Project" lang={lang}>
@@ -30,6 +35,7 @@ const lang = 'es';
         src={project?.imageHref}
         class="h-auto m-auto rounded-md w-72 lg:w-96 aspect-auto"
         alt={`Imagen de mi proyecto ${project?.name}`}
+        style={`view-transition-name: ${viewTransitionName};`}
       />
     </article>
     <p class="text-center">{project?.body.long}</p>

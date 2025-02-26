@@ -22,6 +22,11 @@ import GithubIcon from '@/icons/GithubIcon.astro';
 import ExternalLink from '@/icons/ExternalLink.astro';
 
 import type { Proyectos } from '@/interfaces/experience.interface';
+
+const viewTransitionName = `project-img-${project.id}`;
+// console.log('project index', viewTransitionName);
+
+// console.log('hola mundo');
 ---
 
 <div
@@ -31,6 +36,7 @@ import type { Proyectos } from '@/interfaces/experience.interface';
     src={project.imageHref}
     class="h-auto m-auto rounded-md w-72 lg:w-96 aspect-square object-contain"
     alt={`Image of my project - ${project.name}`}
+    style={`view-transition-name: ${viewTransitionName};`}
   />
   <div
     class="inline-flex flex-wrap items-center justify-center h-8 my-1 ml-2 overflow-hidden text-xs"
