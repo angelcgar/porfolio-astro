@@ -36,7 +36,7 @@ if (projectsByImportance['!!4']) {
 }
 ---
 
-<Layout title="Seccion contacto" description="mi descripcion">
+<Layout title="Seccion contacto" description="mi descripcion" lang="es">
   <div
     class="max-w-full m-auto mt-5 pb-20 px-1 md:px-4 lg:w-[1000px] p-1 md:p-4 leading-normal"
   >
@@ -48,7 +48,7 @@ if (projectsByImportance['!!4']) {
           allProject.map((project) => (
             <div>
               <a href={`/projects/${project.id}`} class="cursor-pointer">
-                <CardProjects project={project} />
+                <CardProjects project={project} lang="es" />
               </a>
             </div>
           ))

@@ -19,7 +19,7 @@ const { title, description: descrition, lang } = Astro.props;
 <html lang="es">
   <head>
     <SEO {title} {descrition} />
-    <ViewTransitions />
+    <!-- <ViewTransitions /> -->
   </head>
 
   <div
@@ -41,9 +41,10 @@ const { title, description: descrition, lang } = Astro.props;
         color-scheme: dark;
       }
     }
-    /* :root {
-    color-scheme: dark light;
-  } */
+
+    @view-transition {
+      navigation: auto;
+    }
 
     html {
       font-family: system-ui, sans-serif;
