@@ -1,43 +1,41 @@
-export interface Proyectos {
-  id: number;
-  name: string;
-  title: string;
-  body: {
-    short: string;
-    long: string;
-  };
-  href: string;
-  imageHref: string;
-  github: string;
-  tags: string[];
-  category?: string;
-  prioridad?: "!!1" | "!!2" | "!!3" | "!!4";
+import type { Proyectos } from "@/interfaces/experience.interface";
+
+export interface Proyectos_API extends Proyectos {
+  category: 'frontend' | 'backend' | 'no_category';
+  prioridad: "!!1" | "!!2" | "!!3" | "!!4";
 }
 
-export const proyectos: Proyectos[] = [
+export const proyectos: Proyectos_API[] = [
   {
     id: 1,
     name: "mario bros",
-    title: "Clon Super Mario Bros",
+    title_es: "Clon Super Mario Bros",
+    title_en: "Clon Super Mario Bros",
     body: {
-      short:
+      short_en:
         "This is a clone of the famous game Super Mario Bros, made with only TypeScript",
-      long: "This is a clone of the famous game Super Mario Bros, made with only TypeScript, where you can play with the keyboard, and it is very entertaining, and can be played on any device.",
+      long_en: "This is a clone of the famous game Super Mario Bros, made with only TypeScript, where you can play with the keyboard, and it is very entertaining, and can be played on any device.",
+      short_es:
+        "Este es un clon del famoso juego Super Mario Bros, hecho con solo TypeScript",
+      long_es: "Este es un clon del famoso juego Super Mario Bros, hecho con solo TypeScript, donde puedes jugar con el teclado, y es muy entretenido, y se puede jugar en cualquier dispositivo.",
     },
     href: "https://visionary-mermaid-bdab86.netlify.app/",
     imageHref: "/img/marioBrosTs.webp",
     github: "https://github.com/angelcgar/mario-bros-ts",
     tags: ["/svg/ViteJs.svg", "/svg/TypeScript.svg", "/svg/HTML.svg"],
-    category: "frontend",
-    prioridad: "!!2",
+    category: "no_category",
+    prioridad: "!!4",
   },
   {
     id: 2,
     name: "Lista de Tareas",
-    title: "My Task List",
+    title_es: "Lista de tareas",
+    title_en: "Task List",
     body: {
-      short: "This is my Task List, created using React and HTML.",
-      long: "Este es mi Lista de Tareas que fue hecho con React, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_en: "This is my Task List, created using React and HTML.",
+      long_en: "Este es mi Lista de Tareas que fue hecho con React, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_es: "Este es mi Lista de Tareas que fue hecho con React, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_es: "Este es mi Lista de Tareas que fue hecho con React, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
     },
     href: "https://spiffy-cascaron-6bc6ed.netlify.app/",
     imageHref: "/img/listaTareas.webp",
@@ -49,11 +47,15 @@ export const proyectos: Proyectos[] = [
   {
     id: 3,
     name: "Documentación",
-    title: "Documentation",
+    title_es: "Documentación",
+    title_en: "Documentation",
     body: {
-      short:
+      short_en:
         "This is a Java documentation project where you can explore Java's documentation.",
-      long: "Este es un proyecto de documentación de Java, en donde se puede ver la documentación de Java, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_en: "Este es un proyecto de documentación de Java, en donde se puede ver la documentación de Java, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_es:
+        "Este es un proyecto de documentación de Java, en donde se puede ver la documentación de Java, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_es: "Este es un proyecto de documentación de Java, en donde se puede ver la documentación de Java, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
     },
     href: "https://documentacion-java.vercel.app/",
     imageHref: "/img/documentacion.webp",
@@ -65,11 +67,15 @@ export const proyectos: Proyectos[] = [
   {
     id: 4,
     name: "Candy crush",
-    title: "Candy Crush",
+    title_es: "Candy Crush",
+    title_en: "Candy Crush",
     body: {
-      short:
+      short_en:
         "This is a clone of the famous Candy Crush game, built entirely with JavaScript.",
-      long: "Este es un clon del famoso juego Candy Crush, hecho con solo JavaScript, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_en: "Este es un clon del famoso juego Candy Crush, hecho con solo JavaScript, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_es:
+        "Este es un clon del famoso juego Candy Crush, hecho con solo JavaScript, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_es: "Este es un clon del famoso juego Candy Crush, hecho con solo JavaScript, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
     },
     href: "https://candy-crush-es.vercel.app/",
     imageHref: "/img/candyCrush.webp",
@@ -81,10 +87,13 @@ export const proyectos: Proyectos[] = [
   {
     id: 5,
     name: "Juego de Snake",
-    title: "My Snake Game",
+    title_es: "Juego de Snake",
+    title_en: "Snake Game",
     body: {
-      short: "This is my Snake game, one of my first projects in NextJs.",
-      long: "Este es mi juego de Snake, uno de mis primeros proyectos en NextJs, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_en: "This is my Snake game, one of my first projects in NextJs.",
+      long_en: "Este es mi juego de Snake, uno de mis primeros proyectos en NextJs, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_es: "Este es mi juego de Snake, uno de mis primeros proyectos en NextJs, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_es: "Este es mi juego de Snake, uno de mis primeros proyectos en NextJs, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
     },
     href: "https://65946ac2adc6ff0a49bef6c8--cheerful-tulumba-6526bc.netlify.app/",
     imageHref: "/img/snake.webp",
@@ -96,10 +105,13 @@ export const proyectos: Proyectos[] = [
   {
     id: 6,
     name: "Buscador de peliculas",
-    title: "Movie Searcher",
+    title_es: "Movie Searcher",
+    title_en: "Movie Searcher",
     body: {
-      short: "This is a movie searcher, built with React and HTML.",
-      long: "Este es un buscador de peliculas, hecho con React, en donde se puede buscar peliculas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_en: "This is a movie searcher, built with React and HTML.",
+      long_en: "Este es un buscador de peliculas, hecho con React, en donde se puede buscar peliculas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_es: "Este es un buscador de peliculas, hecho con React, en donde se puede buscar peliculas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_es: "Este es un buscador de peliculas, hecho con React, en donde se puede buscar peliculas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
     },
     href: "https://joyful-cannoli-81bf1e.netlify.app/",
     imageHref: "/img/peliculas.webp",
@@ -117,10 +129,13 @@ export const proyectos: Proyectos[] = [
   {
     id: 7,
     name: "Lista de Tareas",
-    title: "My Task List",
+    title_es: "My Task List",
+    title_en: "My Task List",
     body: {
-      short: "This is my Task List, created with React and LocalStorage.",
-      long: "Este es mi Lista de Tareas que fue hecho con React y LocalStorage, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_en: "This is my Task List, created with React and LocalStorage.",
+      long_en: "Este es mi Lista de Tareas que fue hecho con React y LocalStorage, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_es: "Este es mi Lista de Tareas que fue hecho con React y LocalStorage, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_es: "Este es mi Lista de Tareas que fue hecho con React y LocalStorage, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
     },
     href: "https://faztweb.github.io/react-tasksapp-localstorage/",
     imageHref: "/img/listaDeTareas.webp",
@@ -132,10 +147,13 @@ export const proyectos: Proyectos[] = [
   {
     id: 8,
     name: "Pokedex",
-    title: "My Pokedex",
+    title_es: "My Pokedex",
+    title_en: "My Pokedex",
     body: {
-      short: "This is my Pokedex, one of my first projects in React.",
-      long: "Este es mi Pokedex, uno de mis primeros proyectos en React, en donde se puede buscar pokemones, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_en: "This is my Pokedex, one of my first projects in React.",
+      long_en: "Este es mi Pokedex, uno de mis primeros proyectos en React, en donde se puede buscar pokemones, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_es: "Este es mi Pokedex, uno de mis primeros proyectos en React, en donde se puede buscar pokemones, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_es: "Este es mi Pokedex, uno de mis primeros proyectos en React, en donde se puede buscar pokemones, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
     },
     href: "https://flourishing-kataifi-ea0631.netlify.app/",
     imageHref: "/img/pokedex.webp",
@@ -147,10 +165,13 @@ export const proyectos: Proyectos[] = [
   {
     id: 9,
     name: "calculadora",
-    title: "My Calculator",
+    title_es: "My Calculator",
+    title_en: "My Calculator",
     body: {
-      short: "This is my Calculator, one of my first projects in React.",
-      long: "Este es mi Calculadora, uno de mis primeros proyectos en React, en donde se puede hacer operaciones matematicas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_en: "This is my Calculator, one of my first projects in React.",
+      long_en: "Este es mi Calculadora, uno de mis primeros proyectos en React, en donde se puede hacer operaciones matematicas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      short_es: "Este es mi Calculadora, uno de mis primeros proyectos en React, en donde se puede hacer operaciones matematicas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_es: "Este es mi Calculadora, uno de mis primeros proyectos en React, en donde se puede hacer operaciones matematicas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
     },
     href: "https://amazing-queijadas-ba02d4.netlify.app/",
     imageHref: "/img/calculadora.webp",

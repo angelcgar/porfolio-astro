@@ -9,11 +9,11 @@ import SharedAnchor from '@/components/SharedAnchor.astro';
 import Title from '@/components/Title.astro';
 
 // api
-import type { Proyectos } from '@/pages/api/proyectos-json';
+import type { Proyectos_API } from '@/pages/api/proyectos-json';
 import { envs } from '@/config/envs';
 
 const data = await fetch(`${envs.PATH_ROOT_URL}/api/data`);
-const res: Proyectos[] = await data.json();
+const res: Proyectos_API[] = await data.json();
 const filteredProjects = res.filter(
   (p) => p.category === envs.PROJECT_CATEGORY,
 );
@@ -24,7 +24,7 @@ const projectsByImportance = Object.groupBy(
   ({ prioridad }) => prioridad!,
 );
 
-let allProject: Proyectos[] = [];
+let allProject: Proyectos_API[] = [];
 
 if (projectsByImportance['!!1']) {
   allProject = [...allProject, ...projectsByImportance['!!1']];

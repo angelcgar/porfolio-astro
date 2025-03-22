@@ -6,17 +6,20 @@ export interface experience {
 }
 
 export interface Proyectos {
-  name: string;
-  title: string;
   body: Body;
-  href: string;
-  imageHref: string;
   github: string;
-  tags: string[];
+  href: string;
   id: number;
+  imageHref: string;
+  name: string;
+  tags: string[];
+  title_en: string;
+  title_es: string;
 }
 
 interface Body {
-  short: string;
-  long: string;
+  short_en: string;
+  short_es: string;
+  long_en: string;
+  long_es: string;
 }
