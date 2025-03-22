@@ -1,0 +1,74 @@
+---
+interface Props {
+  lang: 'en' | 'es';
+}
+
+// Componente
+import CardProjects from '@/components/CardProjects.astro';
+import SharedAnchor from '@/components/SharedAnchor.astro';
+import Title from '@/components/Title.astro';
+
+// api
+import type { Proyectos } from '@/pages/api/proyectos-json';
+import { envs } from '@/config/envs';
+
+const data = await fetch(`${envs.PATH_ROOT_URL}/api/data`);
+const res: Proyectos[] = await data.json();
+const filteredProjects = res.filter(
+  (p) => p.category === envs.PROJECT_CATEGORY,
+);
+const selectedProjects = filteredProjects.slice(0, 4);
+
+const projectsByImportance = Object.groupBy(
+  selectedProjects,
+  ({ prioridad }) => prioridad!,
+);
+
+let allProject: Proyectos[] = [];
+
+if (projectsByImportance['!!1']) {
+  allProject = [...allProject, ...projectsByImportance['!!1']];
+}
+if (projectsByImportance['!!2']) {
+  allProject = [...allProject, ...projectsByImportance['!!2']];
+}
+if (projectsByImportance['!!3']) {
+  allProject = [...allProject, ...projectsByImportance['!!3']];
+}
+if (projectsByImportance['!!4']) {
+  allProject = [...allProject, ...projectsByImportance['!!4']];
+}
+
+const text = {
+  en: {
+    title: 'My projects',
+    button_content: 'More projects',
+  },
+  es: {
+    title: 'Mis proyectos',
+    button_content: 'Más proyectos',
+  },
+};
+// console.log({ allProject });
+const { lang } = Astro.props;
+---
+
+<section class="container p-5 mx-1 my-4 rounded-md md:p-10">
+  <Title class=""> {text[lang].title} </Title>
+
+  <div class="flex gap-6 mt-10 flex-wrap">
+    {
+      allProject.map((project) => (
+        <CardProjects project={project} lang={lang} />
+      ))
+    }
+  </div>
+
+  <div class="flex items-center justify-center">
+    <SharedAnchor
+      slot={text[lang].button_content}
+      arialLabel="view more projects"
+      href="/mas-proyectos"
+    />
+  </div>
+</section>
