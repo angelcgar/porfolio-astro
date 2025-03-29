@@ -34,7 +34,7 @@ const text = {
 ---
 
 <header
-  class="container flex flex-col gap-3 p-5 mx-1 rounded-md md:flex-row text-pretty md:text-left md:p-10 mb-11"
+  class="container flex flex-col gap-3 p-5 mx-1 rounded-md md:flex-row text-pretty md:text-left md:p-10 mb-10"
 >
   <div class="flex-1">
     <Title class="pb-3"> {text[lang].title} </Title>
@@ -46,7 +46,7 @@ const text = {
       {text[lang].description2}
     </p>
 
-    <div class="flex flex-wrap gap-1 md:gap-3">
+    <div class="flex flex-wrap gap-1 md:gap-3 mt-3">
       <SharedAnchor
         slot={text[lang].buttons_names[0]}
         arialLabel="view my github profile"

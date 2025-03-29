@@ -32,7 +32,7 @@ const viewTransitionName = `project-img-${project.id}`;
 <!-- todo:  <a href={`/projects/${project.id}`}>-->
 <div class="flex items-center justify-center">
   <div
-    class="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-clip-border shadow-md bg-slate-100 dark:bg-ancg-950"
+    class="relative flex w-full flex-row rounded-xl bg-clip-border shadow-md bg-slate-100 dark:bg-ancg-950"
   >
     <!-- <div
   class="p-5 transition-colors duration-300 ease-in-out bg-gray-100 dark:bg-ancg-950 rounded-xl dark:hover:bg-ancg-900/40 hover:bg-gray-200 hover:shadow-lg"
@@ -87,7 +87,7 @@ const viewTransitionName = `project-img-${project.id}`;
       <p
         class="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased dark:text-gray-300"
       >
-        {lang === 'es' ? project.body.short_es : project.body.short_en}
+        {lang === 'es' ? project.body.long_es : project.body.long_en}
       </p>
 
       <!-- <div class="flex flex-col pl-2 lg:flex-row gap-x-3"> -->
