@@ -1,0 +1,38 @@
+---
+interface Props {
+  TAGS: string[];
+}
+
+const { TAGS } = Astro.props;
+---
+
+<div class="mb-5">
+  <div
+    class="inline-flex flex-wrap items-center justify-center h-8 my-1 ml-2 overflow-hidden text-xs"
+  >
+    {
+      TAGS &&
+        TAGS.map((tag: string) => {
+          const imageName = tag
+            .split('/')
+            .pop()!
+            .replace('.svg', '')
+            .replace('.webp', '');
+          // console.log({ TAGS, imageName });
+
+          return (
+            <div class="mt-1 mr-1 inline-block font-medium whitespace-nowrap rounded-full pr-2 pl-1 leading-5  text-teal-100 bg-white dark:bg-ancg-900 items-center justify-center border-[1px] text-sm my-1 text-center flex-col content-center w-fit border-slate-500">
+              <div class="inline-flex size-[18px] items-center justify-start overflow-hidden">
+                <img
+                  src={tag}
+                  class="flex-shrink-0 h-auto pt-1 pl-1 m-auto w-7 aspect-square"
+                  alt={`The skill I used: ${imageName}`}
+                />
+              </div>
+              <span class="ml-1 text-black dark:text-white">{` ${imageName} `}</span>
+            </div>
+          );
+        })
+    }
+  </div>
+</div>
