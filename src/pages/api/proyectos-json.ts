@@ -33,9 +33,9 @@ export const proyectos: Proyectos_API[] = [
     title_en: "Task List",
     body: {
       short_en: "This is my Task List, created using React and HTML.",
-      long_en: "Este es mi Lista de Tareas que fue hecho con React, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
-      short_es: "Este es mi Lista de Tareas que fue hecho con React, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
-      long_es: "Este es mi Lista de Tareas que fue hecho con React, en donde se puede agregar, eliminar y editar tareas, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_en: "A to-do list developed with React that allows you to add, edit, and delete tasks easily and intuitively. Designed with a user-friendly interface to improve time management and productivity.",
+      short_es: "Este es mi Lista de Tareas que fue hecho con React, en donde se puede agregar, eliminar y editar tareas..",
+      long_es: "Lista de tareas desarrollada con React, que permite agregar, editar y eliminar tareas de manera sencilla e intuitiva. Diseñada con una interfaz amigable para mejorar la gestión del tiempo y la productividad.",
     },
     href: "https://spiffy-cascaron-6bc6ed.netlify.app/",
     imageHref: "/img/listaTareas.webp",
@@ -52,10 +52,10 @@ export const proyectos: Proyectos_API[] = [
     body: {
       short_en:
         "This is a Java documentation project where you can explore Java's documentation.",
-      long_en: "Este es un proyecto de documentación de Java, en donde se puede ver la documentación de Java, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_en: "Java documentation project that allows you to easily browse and reference the language documentation. Designed to provide easy access to key information about Java classes, methods, and features.",
       short_es:
-        "Este es un proyecto de documentación de Java, en donde se puede ver la documentación de Java, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
-      long_es: "Este es un proyecto de documentación de Java, en donde se puede ver la documentación de Java, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+        "Un proyecto de documentación de Java, en donde se puede ver la documentación de Java.",
+      long_es: "Proyecto de documentación de Java que permite explorar y consultar fácilmente la documentación del lenguaje. Diseñado para facilitar el acceso a información clave sobre clases, métodos y características de Java.",
     },
     href: "https://documentacion-java.vercel.app/",
     imageHref: "/img/documentacion.webp",
@@ -72,10 +72,10 @@ export const proyectos: Proyectos_API[] = [
     body: {
       short_en:
         "This is a clone of the famous Candy Crush game, built entirely with JavaScript.",
-      long_en: "Este es un clon del famoso juego Candy Crush, hecho con solo JavaScript, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_en: "A clone of the classic Candy Crush game, developed solely with JavaScript. It allows keyboard play and is compatible with any device, offering an entertaining and accessible experience.",
       short_es:
-        "Este es un clon del famoso juego Candy Crush, hecho con solo JavaScript, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
-      long_es: "Este es un clon del famoso juego Candy Crush, hecho con solo JavaScript, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+        "Un clon del famoso juego Candy Crush, hecho con solo JavaScript.",
+      long_es: "Clon del clásico juego Candy Crush, desarrollado únicamente con JavaScript. Permite jugar con el teclado y es compatible con cualquier dispositivo, ofreciendo una experiencia entretenida y accesible.",
     },
     href: "https://candy-crush-es.vercel.app/",
     imageHref: "/img/candyCrush.webp",
@@ -91,9 +91,9 @@ export const proyectos: Proyectos_API[] = [
     title_en: "Snake Game",
     body: {
       short_en: "This is my Snake game, one of my first projects in NextJs.",
-      long_en: "Este es mi juego de Snake, uno de mis primeros proyectos en NextJs, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
-      short_es: "Este es mi juego de Snake, uno de mis primeros proyectos en NextJs, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
-      long_es: "Este es mi juego de Snake, uno de mis primeros proyectos en NextJs, en donde se puede jugar con el teclado, además de que es muy entretenido, y se puede jugar en cualquier dispositivo.",
+      long_en: "A Snake game developed with HTML, CSS, and JavaScript, one of my first projects. It allows keyboard play, offering a classic and dynamic experience.",
+      short_es: "Juego de Snake desarrollado con HTML, CSS y JavaScript.",
+      long_es: "Juego de Snake desarrollado con HTML, CSS y JavaScript, uno de mis primeros proyectos. Permite jugar usando el teclado, ofreciendo una experiencia clásica y dinámica.",
     },
     href: "https://65946ac2adc6ff0a49bef6c8--cheerful-tulumba-6526bc.netlify.app/",
     imageHref: "/img/snake.webp",
